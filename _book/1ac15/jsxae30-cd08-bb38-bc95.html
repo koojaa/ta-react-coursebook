@@ -1,0 +1,501 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JSX 기초문법 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="propsc640-state.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">개발환경세팅</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    workspace settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1강</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="jsxae30-cd08-bb38-bc95.html">
+            
+                <a href="jsxae30-cd08-bb38-bc95.html">
+            
+                    
+                    JSX 기초문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="propsc640-state.html">
+            
+                <a href="propsc640-state.html">
+            
+                    
+                    Props와 State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                <a href="lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                    
+                    LifeCycle에 대한 이해
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="javascript-array-methods.html">
+            
+                <a href="javascript-array-methods.html">
+            
+                    
+                    Javascript Array Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="wrap-ups1.html">
+            
+                <a href="wrap-ups1.html">
+            
+                    
+                    Wrap-ups(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JSX 기초문법</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><em>1&#xAC15;&#xC5D0;&#xC11C; &#xB2E4;&#xB8EC; &#xB0B4;&#xC6A9;&#xC740; pdf ppt&#xC2AC;&#xB77C;&#xC774;&#xB4DC;&#xC5D0; &#xBAA8;&#xB450; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</em></p>
+<p><em>&#xBCF5;&#xC2B5;&#xC774;&#xB77C;&#xACE0; &#xC0DD;&#xAC01;&#xD558;&#xC2DC;&#xACE0; &#xCC45;&#xC77D;&#xB4EF;&#xC774; &#xC77D;&#xC5B4;&#xC8FC;&#xC138;&#xC694;.</em></p>
+<h1 id="jsx">JSX</h1>
+<p>JSX&#xB294; &#xB9AC;&#xC561;&#xD2B8; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xC791;&#xC131;&#xD558;&#xBA74;&#xC11C; return&#xBB38;&#xC5D0; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBB38;&#xBC95;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC5BC;&#xD54F;&#xBCF4;&#xBA74; HTML&#xAC19;&#xC9C0;&#xB9CC;, &#xC2E4;&#xC81C;&#xB85C;&#xB294; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>JSX&#xB97C; &#xC791;&#xC131;&#xD558;&#xBA74; &#xBC14;&#xBCA8;&#xC774; transpiling&#xC744; &#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;App&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello React<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+);
+</code></pre>
+<p>&#xC774;&#xB807;&#xAC8C; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0;&#xC11C; JSX&#xB97C; &#xC791;&#xC131;&#xD558;&#xBA74; &#xBC14;&#xBCA8; &#xD2B8;&#xB80C;&#xC2A4;&#xD30C;&#xC77C;&#xB7EC;&#xAC00; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB85C; &#xBCC0;&#xD658;&#xC744; &#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>babel&#xC0AC;&#xC774;&#xD2B8;&#xC5D0; &#xB4E4;&#xC5B4;&#xAC00;&#xC11C; &#xC5B4;&#xB5BB;&#xAC8C; &#xBCC0;&#xD658;&#xB418;&#xB294;&#xC9C0; &#xC0B4;&#xD3B4;&#xBCF4;&#xB294;&#xAC83;&#xB3C4; &#xC88B;&#xC744; &#xAC83; &#xAC19;&#xB124;&#xC694;!</p>
+<p>&#xB610;&#xD55C; JSX&#xB294; &#xADF8;&#xB0E5; &#xB2E8;&#xC21C;&#xD55C; HTML&#xC774; &#xC544;&#xB2C8;&#xB77C;&#xACE0; &#xB9D0;&#xC500;&#xB4DC;&#xB838;&#xC8E0;?</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xC9C0;&#xCF1C;&#xC918;&#xC57C; &#xD560; &#xC5EC;&#xB7EC; &#xADDC;&#xCE59;&#xB4E4;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADDC;&#xCE59;&#xC740; &#xD06C;&#xAC8C; &#xC77C;&#xACF1;&#xAC00;&#xC9C0;&#xC778;&#xB370;, &#xD558;&#xB098;&#xC529; &#xC0B4;&#xD3B4;&#xBCF4;&#xB3C4;&#xB85D; &#xD560;&#xAC8C;&#xC694;.</p>
+<h4 id="1-&#xD0DC;&#xADF8;&#xB294;-&#xBC18;&#xB4DC;&#xC2DC;-&#xB2EB;&#xC544;&#xC918;&#xC57C;-&#xD55C;&#xB2E4;">1. &#xD0DC;&#xADF8;&#xB294; &#xBC18;&#xB4DC;&#xC2DC; &#xB2EB;&#xC544;&#xC918;&#xC57C; &#xD55C;&#xB2E4;.</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>hello react!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    );
+  }
+}
+
+export default App;
+</span></code></pre>
+<p>&#xC8FC;&#xBAA9;&#xD560; &#xC810;&#xC740; h1, div, p&#xAC19;&#xC740; &#xD0DC;&#xADF8; &#xC678;&#xC5D0; input &#xAC19;&#xC740; &#xD0DC;&#xADF8;&#xB3C4; &#xBC18;&#xB4DC;&#xC2DC; &#xB2EB;&#xC544;&#xC8FC;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>JSX&#xB294; html&#xC774; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;!</p>
+<h4 id="2-&#xCD5C;&#xC0C1;&#xB2E8;&#xC5D0;&#xC11C;&#xB294;-&#xBC18;&#xB4DC;&#xC2DC;-div&#xB85C;-&#xAC10;&#xC2F8;&#xC8FC;&#xC5B4;&#xC57C;-&#xD55C;&#xB2E4;">2. &#xCD5C;&#xC0C1;&#xB2E8;&#xC5D0;&#xC11C;&#xB294; &#xBC18;&#xB4DC;&#xC2DC; div&#xB85C; &#xAC10;&#xC2F8;&#xC8FC;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;.</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          Hello
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          Bye
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<p>&#xD0DC;&#xADF8;&#xB4E4;&#xC740; &#xBC18;&#xB4DC;&#xC2DC; &#xBC16;&#xC5D0;&#xC11C; &#xCD5C;&#xC885;&#xC801;&#xC73C;&#xB85C; &#xD55C;&#xBC88; &#xB354; &#xAC10;&#xC2F8;&#xC8FC;&#xB3C4;&#xB85D; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC544;&#xB798;&#xCF54;&#xB4DC;&#xCC98;&#xB7FC; div&#xB97C; &#xBC16;&#xC5D0;&#xC11C; &#xAC10;&#xC2F8;&#xC9C0; &#xC54A;&#xACE0; div&#xB97C; &#xB450;&#xBC88; &#xC5F0;&#xB2EC;&#xC544; &#xC4F0;&#xC2DC;&#xBA74; &#xC5D0;&#xB7EC;&#xAC00; &#xB0A9;&#xB2C8;&#xB2E4; !</p>
+<pre><code class="lang-js">import React, { Component } from &apos;react&apos;;
+
+class App extends Component {
+  render() {
+    return (
+        &lt;div&gt;
+          Hello
+        &lt;/div&gt;
+        &lt;div&gt;
+          Bye
+        &lt;/div&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre>
+<p>&#xB610;&#xD55C; div&#xB9D0;&#xACE0; Fragment&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xB3C4;&#xB41C;&#xB2E4;&#xACE0; &#xD588;&#xC5C8;&#xC8E0;?</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; Fragment&#xB97C; &#xAD8C;&#xC7A5;&#xD558;&#xC9C0;&#xB294; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC77C;&#xBC18; div&#xBCF4;&#xB2E4;&#xB294; &#xBB34;&#xAC81;&#xAE30; &#xB54C;&#xBB38;&#xC774;&#xC5D0;&#xC694;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xC2DC;&#xBA58;&#xD2F1; &#xB9C8;&#xD06C;&#xC5C5;(&#xC758;&#xBBF8;&#xB2E8;&#xC704; &#xB9C8;&#xD06C;&#xC5C5;)&#xC744; &#xC911;&#xC694;&#xD558;&#xAC8C; &#xC0DD;&#xAC01;&#xD558;&#xC2E0;&#xB2E4;&#xBA74; &#xC5EC;&#xC804;&#xD788; &#xC0DD;&#xAC01;&#xD574;&#xBCFC;&#xB9CC;&#xD55C; &#xC635;&#xC158;&#xC785;&#xB2C8;&#xB2E4;!</p>
+<h4 id="3-jsx&#xC548;&#xC5D0;&#xC11C;-&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;-&#xAC12;&#xC744;-&#xC0AC;&#xC6A9;&#xD558;&#xACE0;-&#xC2F6;&#xC744;&#xB54C;&#xB294;-&#xB97C;-&#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;">3. JSX&#xC548;&#xC5D0;&#xC11C; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xAC12;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xACE0; &#xC2F6;&#xC744;&#xB54C;&#xB294; {}&#xB97C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">const</span> name = <span class="hljs-string">&apos;react&apos;</span>
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        hello {name}!
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<p>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB294; &#xB2E8;&#xC21C; UI&#xB97C; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xAC83; &#xC678;&#xC5D0;&#xB3C4; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xAE30;&#xB2A5;&#xC744; &#xC81C;&#xACF5;&#xD55C;&#xB2E4;&#xACE0; &#xB9D0;&#xC500;&#xB4DC;&#xB838;&#xC8E0;?</p>
+<p>&#xC704; &#xCF54;&#xB4DC;&#xCC98;&#xB7FC; {}&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC548;&#xC5D0;&#xC11C; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xAC12;&#xC744; &#xB123;&#xC5B4;&#xC904; &#xC218;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>JSX&#xC5D0;&#xC11C; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xAC12;&#xC744; &#xC0AC;&#xC6A9;&#xD560;&#xB54C;&#xB294; &#xC704;&#xCC98;&#xB7FC; {}&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h4 id="4-&#xC870;&#xAC74;&#xBD80;-&#xB80C;&#xB354;&#xB9C1;&#xC744;-&#xD558;&#xACE0;&#xC2F6;&#xC73C;&#xBA74;-&#xC5F0;&#xC0B0;&#xC790;&#xB098;-&#xC0BC;&#xD56D;&#xC5F0;&#xC0B0;&#xC790;&#xB97C;-&#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;">4. &#xC870;&#xAC74;&#xBD80; &#xB80C;&#xB354;&#xB9C1;&#xC744; &#xD558;&#xACE0;&#xC2F6;&#xC73C;&#xBA74; &amp;&amp;&#xC5F0;&#xC0B0;&#xC790;&#xB098; &#xC0BC;&#xD56D;&#xC5F0;&#xC0B0;&#xC790;&#xB97C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        {
+          true
+            ? console.log(&apos;correct&apos;)
+            : console.log(&apos;incorrect&apos;)
+        }
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<p>&#xBC14;&#xBCA8;&#xC740; if~else&#xB97C; transpile&#xD558;&#xC9C0; &#xBABB;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC218;&#xC5C5;&#xC2DC;&#xAC04;&#xC5D0; &#xBC14;&#xBCA8;&#xC5D0;&#xC11C; if else&#xB97C; transpile&#xD558;&#xC9C0; &#xBABB;&#xD558;&#xB294;&#xAC78; &#xBCF4;&#xC5EC;&#xB4DC;&#xB838;&#xC8E0;?</p>
+<p>&#xB530;&#xB77C;&#xC11C; if else&#xBB38;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74; &#xC989;&#xC2DC;&#xD638;&#xCD9C;&#xD568;&#xC218; &#xD328;&#xD134;&#xC744; &#xC0AC;&#xC6A9;&#xD574;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC0AC;&#xC2E4; &#xC989;&#xC2DC;&#xD638;&#xCD9C;&#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD560;&#xC77C;&#xC740; &#xC815;&#xB9D0; &#xB4DC;&#xBB3C;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, 3&#xD56D;&#xC5F0;&#xC0B0;&#xC790; &#xB610;&#xB294; &amp;&amp; operator(and&#xC5F0;&#xC0B0;&#xC790;)&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xB300;&#xBD80;&#xBD84;&#xC758; &#xACBD;&#xC6B0;&#xB97C; &#xCC98;&#xB9AC;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xBE48;&#xB2E4;.</p>
+<h4 id="5-&#xC778;&#xB77C;&#xC778;-&#xC2A4;&#xD0C0;&#xC77C;&#xB9C1;&#xC740;-&#xD56D;&#xC0C1;-&#xAC1D;&#xCCB4;&#xD615;&#xC2DD;&#xC73C;&#xB85C;-&#xC791;&#xC131;&#xD55C;&#xB2E4;">5. &#xC778;&#xB77C;&#xC778; &#xC2A4;&#xD0C0;&#xC77C;&#xB9C1;&#xC740; &#xD56D;&#xC0C1; &#xAC1D;&#xCCB4;&#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xC791;&#xC131;&#xD55C;&#xB2E4;.</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">const</span> style = {
+      backgroundColor: <span class="hljs-string">&apos;red&apos;</span>,
+    };
+
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{style}</span>&gt;</span>react<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<p>&#xC2A4;&#xD0C0;&#xC77C;&#xC740; &#xD56D;&#xC0C1; &#xAC1D;&#xCCB4;&#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xC791;&#xC131;&#xC744; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xC778;&#xB77C;&#xC778; &#xC2A4;&#xD0C0;&#xC77C;&#xB85C; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xB9E4;&#xAE34;&#xB2E4;&#xBA74; &#xC911;&#xAD04;&#xD638;&#xAC00; &#xB450;&#xBC88; &#xB4E4;&#xC5B4;&#xAC00;&#xACA0;&#xC8E0;?</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{backgroundColor:</span> &apos;<span class="hljs-attr">red</span>&apos;}}&gt;</span>react<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<h4 id="6-&#xBCC4;&#xB3C4;&#xC758;-&#xC2A4;&#xD0C0;&#xC77C;&#xD30C;&#xC77C;&#xC744;-&#xB9CC;&#xB4E4;&#xC5C8;&#xC73C;&#xBA74;-class&#xB300;&#xC2E0;-classname&#xC744;-&#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;">6. &#xBCC4;&#xB3C4;&#xC758; &#xC2A4;&#xD0C0;&#xC77C;&#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4;&#xC5C8;&#xC73C;&#xBA74; class&#xB300;&#xC2E0; className&#xC744; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./App.css&apos;</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;App&quot;</span>&gt;</span>
+        react
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<p>&#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xC801;&#xC6A9;&#xD560;&#xB54C;&#xB294; class&#xAC00; &#xC544;&#xB2CC; className&#xC744; &#xC368;&#xC8FC;&#xC138;&#xC694;.</p>
+<p>&#xC0AC;&#xC2E4; class&#xB85C; &#xD574;&#xB3C4;&#xB418;&#xC9C0;&#xB9CC; &#xADF8;&#xB807;&#xAC8C;&#xD558;&#xBA74; warning&#xC774; &#xBC1C;&#xC0DD;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>class&#xD0A4;&#xC6CC;&#xB4DC;&#xB294; &#xC774;&#xBBF8; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xC911;&#xC774;&#xAE30;&#xB54C;&#xBB38;&#xC5D0; &#xAC00;&#xAE09;&#xC801; &#xD53C;&#xD558;&#xB3C4;&#xB85D; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<h4 id="7-&#xC8FC;&#xC11D;&#xC740;--&#xC744;-&#xC0AC;&#xC6A9;&#xD574;-&#xC791;&#xC131;&#xD55C;&#xB2E4;">7. &#xC8FC;&#xC11D;&#xC740; {/* */}&#xC744; &#xC0AC;&#xC6A9;&#xD574; &#xC791;&#xC131;&#xD55C;&#xB2E4;.</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        {/* &#xC8FC;&#xC11D;&#xC740; &#xC774;&#xB807;&#xAC8C; */}
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> // &#xD0DC;&#xADF8;&#xC548;&#xC5D0;&#xC11C;&gt;</span>
+           react
+        <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    );
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<p>&#xC8FC;&#xC11D;&#xC740; {/* */}&#xD615;&#xC2DD;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC154;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;!</p>
+<p>&#xC5EC;&#xAE30;&#xAE4C;&#xC9C0; &#xCD1D; &#xC77C;&#xACF1;&#xAC00;&#xC9C0; JSX&#xADDC;&#xCE59;&#xC744; &#xBC30;&#xC6CC;&#xBD24;&#xC5B4;&#xC694;. &#xC774; &#xADDC;&#xCE59;&#xB4E4;&#xC744; &#xAF2D; &#xC9C0;&#xCF1C;&#xC8FC;&#xC154;&#xC57C; &#xD55C;&#xB2E4;&#xB294;&#xAC83;&#xC744; &#xC78A;&#xC9C0;&#xB9C8;&#xC138;&#xC694;!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: workspace settings">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="propsc640-state.html" class="navigation navigation-next " aria-label="Next page: Props와 State">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JSX 기초문법","level":"2.1","depth":1,"next":{"title":"Props와 State","level":"2.2","depth":1,"path":"1ac15/propsc640-state.md","ref":"1ac15/propsc640-state.md","articles":[]},"previous":{"title":"workspace settings","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"1ac15/jsxae30-cd08-bb38-bc95.md","mtime":"2020-03-21T10:43:58.689Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-21T10:55:51.154Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
