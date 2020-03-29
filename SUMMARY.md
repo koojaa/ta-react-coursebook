@@ -2,7 +2,7 @@
 
 ## 개발환경세팅
 
-* [workspace settings](README.md)
+* [READEME](README.md)
 
 ## 1강
 
@@ -11,4 +11,8 @@
 * [LifeCycle에 대한 이해](1ac15/lifecyclec5d0-b300-d55c-c774-d574.md)
 * [Javascript Array Methods](1ac15/javascript-array-methods.md)
 * [Wrap-ups\(1\)](1ac15/wrap-ups1.md)
+
+## 2강
+
+* [Wrap-ups\(2\)](2ac15/wrap-ups2.md)
 
