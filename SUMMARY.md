@@ -15,4 +15,5 @@
 ## 2강
 
 * [Wrap-ups\(2\)](2ac15/wrap-ups2.md)
+* [todolist](2ac15/todolist.md)
 
