@@ -418,8 +418,65 @@ class Item extends Component {
     }
 }
 
-export default TodoItem;
+export default Item;
 ```
+
+여기까지 하면 모두 잘 작동하는 것을 확인하실 수 있습니다. 이제 마지막으로 최적화 작업을 해보겠습니다.
+
+리액트에서는 부모컴포넌트가 리렌더링되면 자식컴포넌트도 리렌더링 된다고 말씀드렸죠?
+
+만약 자식컴포넌트의 내용은 바뀐 것이 전혀 없는데 부모가 리렌더링 되었다는 이유만으로 자식컴포넌트도 리렌더링 된다면 정말 비효율적일 것입니다.
+
+현재 App컴포넌트가 todos 관리하고 자식들이 그 내용을 보여주고 있습니다.
+
+따라서 todos 배열의 여러 요소들중 한 요소의 done만 바뀌었으면 그 요소만 리렌더링 해주면 됩니다.
+
+바로 이런 경우에 shouldComponentUpdate를 통해 최적화해 줄 수 있습니다.
+
+```js
+// src/components/Item.js
+
+import React, { Component } from 'react';
+import './Item.css';
+
+class Item extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        if (this.props.todo !== nextProps.todo) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    render() {
+        const { todo, onToggle, onRemove } = this.props;
+        return (
+            <div
+                className={`Item ${todo.done && 'active'}`}
+                onClick={() => onToggle(todo.id)}
+            >
+                <div className="check">&#10004;</div>
+                <div
+                    className="remove"
+                    onClick={e => {
+                        e.stopPropagation();
+                        onRemove(todo.id);
+                    }}
+                >
+                    [지우기]
+                </div>
+                <div className="text">{todo.text}</div>
+            </div>
+        );
+    }
+}
+
+export default Item;
+```
+
+성능을 보다 정확하게 해보고 싶으시면 개발자도구를 열어 performance탭의 record기능 혹은 리액트 개발자도구의 profiler를 통해 비교해보세요. 
+
+간단하게 렌더가 되었는지만 확인을 하고 싶으시면, Item컴포넌트에 로깅을 찍어봄으로써 해당 컴포넌트가 리렌더되고있는지 아닌지 알 수 있습니다.
 
 
 
