@@ -126,7 +126,7 @@ class App extends Component {
             })
         });
     };
-    
+
     render() {
         return (
             <div className="App">
@@ -217,7 +217,7 @@ class App extends Component {
             })
         });
     };
-    
+
     render() {
         return (
             <div className="App">
@@ -365,15 +365,15 @@ import React, { Component } from 'react';
 import './List.css';
 import Item from './Item';
 
-class TodoList extends Component {
+class List extends Component {
     render() {
         const { todos, onToggle, onRemove } = this.props;
 
         return (
-            <div className="TodoList">
+            <div className="List">
                 {todos.map(todo => {
                     return (
-                        <TodoItem
+                        <Item
                             todo={todo}
                             onToggle={onToggle}
                             onRemove={onRemove}
@@ -385,7 +385,40 @@ class TodoList extends Component {
     }
 }
 
-export default TodoList;
+export default List;
+```
+
+```js
+// src/components/Item.js
+
+import React, { Component } from 'react';
+import './Item.css';
+
+class Item extends Component {
+    render() {
+        const { todo, onToggle, onRemove } = this.props;
+        return (
+            <div
+                className={`Item ${todo.done && 'active'}`}
+                onClick={() => onToggle(todo.id)}
+            >
+                <div className="check">&#10004;</div>
+                <div
+                    className="remove"
+                    onClick={e => {
+                        e.stopPropagation();
+                        onRemove(todo.id);
+                    }}
+                >
+                    [지우기]
+                </div>
+                <div className="text">{todo.text}</div>
+            </div>
+        );
+    }
+}
+
+export default TodoItem;
 ```
 
 
