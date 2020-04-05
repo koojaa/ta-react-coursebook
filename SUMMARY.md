@@ -19,5 +19,6 @@
 
 ## 3강
 
-* [setState](3ac15/setstate.md)
+* [setState \(updater function\)](3ac15/setstate.md)
+* [Immer](3ac15/immer.md)
 
