@@ -32,7 +32,7 @@ utils.js와 같은 유틸관련 파일을 상대경로가 아닌 절대경로로
 
 **@babel/plugin-transform-react-jsx-source**
 
-@babel 네임스페이스를 가진 위 세가지 패키지가 uninstall되는 경우가 있습니다. 
+@babel 네임스페이스를 가진 위 세가지 패키지가 uninstall되는 경우가 있습니다.
 
 \(이 글을 쓰는 시점인 2020년 4월 5일에는 굳이 uninstall하지 않아도 잘 작동합니다\)
 
@@ -46,7 +46,7 @@ utils.js와 같은 유틸관련 파일을 상대경로가 아닌 절대경로로
 
 라이브러리에서 제공하는. scss파일이 어디에 있는지 확인하기 위해서 직접 node\_modules/ 폴더안을 들여다 봐야 하는데,
 
-이 작업은 터미널로 확인하면 훨씬 편하게 하실 수 있습니다. 
+이 작업은 터미널로 확인하면 훨씬 편하게 하실 수 있습니다.
 
 라이브러리들 마다 경로가 다릅니다. 반드시 경로를 확인하세요.
 
@@ -58,41 +58,41 @@ utils.js와 같은 유틸관련 파일을 상대경로가 아닌 절대경로로
 // webpack.config.js
 
 ...
-	const getStyleLoaders = (cssOptions, preProcessor) => {
-		const loaders = [
-			isEnvDevelopment && require.resolve('style-loader'),
-			isEnvProduction && {
-				loader: MiniCssExtractPlugin.loader,
-				// css is located in `static/css`, use '../../' to locate index.html folder
-				// in production `paths.publicUrlOrPath` can be a relative path
-				options: paths.publicUrlOrPath.startsWith('.') ? { publicPath: '../../' } : {},
-			},
-			{
-				loader: require.resolve('css-loader'),
-				options: cssOptions,
-			},
-		].filter(Boolean);
-		if (preProcessor) {
-			loaders.push(
-				{
-					loader: require.resolve('resolve-url-loader'),
-					options: {
-						sourceMap: isEnvProduction && shouldUseSourceMap,
-					},
-				},
-				{
-					loader: require.resolve(preProcessor),
-					options: {
-						sourceMap: true,
-						sassOptions: {
-							includePaths: [paths.appSrc + '/styles'],
-						},
-					},
-				}
-			);
-		}
-		return loaders;
-	};
+    const getStyleLoaders = (cssOptions, preProcessor) => {
+        const loaders = [
+            isEnvDevelopment && require.resolve('style-loader'),
+            isEnvProduction && {
+                loader: MiniCssExtractPlugin.loader,
+                // css is located in `static/css`, use '../../' to locate index.html folder
+                // in production `paths.publicUrlOrPath` can be a relative path
+                options: paths.publicUrlOrPath.startsWith('.') ? { publicPath: '../../' } : {},
+            },
+            {
+                loader: require.resolve('css-loader'),
+                options: cssOptions,
+            },
+        ].filter(Boolean);
+        if (preProcessor) {
+            loaders.push(
+                {
+                    loader: require.resolve('resolve-url-loader'),
+                    options: {
+                        sourceMap: isEnvProduction && shouldUseSourceMap,
+                    },
+                },
+                {
+                    loader: require.resolve(preProcessor),
+                    options: {
+                        sourceMap: true,
+                        sassOptions: {
+                            includePaths: [paths.appSrc + '/styles'],
+                        },
+                    },
+                }
+            );
+        }
+        return loaders;
+    };
 
 ...
 ```
