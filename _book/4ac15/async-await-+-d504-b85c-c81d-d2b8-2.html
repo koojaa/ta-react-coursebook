@@ -1,0 +1,1098 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>async-await + 프로젝트2 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="router.html" />
+    
+    
+    <link rel="prev" href="../3ac15/axios.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">개발환경세팅</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    READEME
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1강</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                <a href="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                    
+                    JSX 기초문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../1ac15/propsc640-state.html">
+            
+                <a href="../1ac15/propsc640-state.html">
+            
+                    
+                    Props와 State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                <a href="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                    
+                    LifeCycle에 대한 이해
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../1ac15/javascript-array-methods.html">
+            
+                <a href="../1ac15/javascript-array-methods.html">
+            
+                    
+                    Javascript Array Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../1ac15/wrap-ups1.html">
+            
+                <a href="../1ac15/wrap-ups1.html">
+            
+                    
+                    Wrap-ups(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2강</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../2ac15/wrap-ups2.html">
+            
+                <a href="../2ac15/wrap-ups2.html">
+            
+                    
+                    Wrap-ups(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../2ac15/todolist.html">
+            
+                <a href="../2ac15/todolist.html">
+            
+                    
+                    컴포넌트 구조화 시작
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3강</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../3ac15/setstate.html">
+            
+                <a href="../3ac15/setstate.html">
+            
+                    
+                    setState (updater function)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../3ac15/immer.html">
+            
+                <a href="../3ac15/immer.html">
+            
+                    
+                    Immer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../3ac15/styling1-sass.html">
+            
+                <a href="../3ac15/styling1-sass.html">
+            
+                    
+                    styling(1) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../3ac15/styling2-sass.html">
+            
+                <a href="../3ac15/styling2-sass.html">
+            
+                    
+                    styling(2) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../3ac15/promise.html">
+            
+                <a href="../3ac15/promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../3ac15/axios.html">
+            
+                <a href="../3ac15/axios.html">
+            
+                    
+                    Axios를 이용한 api call
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4강</li>
+        
+        
+    
+        <li class="chapter active" data-level="5.1" data-path="async-await-+-d504-b85c-c81d-d2b8-2.html">
+            
+                <a href="async-await-+-d504-b85c-c81d-d2b8-2.html">
+            
+                    
+                    async-await + 프로젝트2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="router.html">
+            
+                <a href="router.html">
+            
+                    
+                    router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >async-await + 프로젝트2</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><strong>&#xC0C8;&#xB85C;&#xC6B4; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB97C; &#xC2DC;&#xC791;&#xD558;&#xAE30; &#xC804;&#xC5D0;,</strong></p>
+<p>&#xC9C0;&#xB09C;&#xC2DC;&#xAC04;&#xC5D0;&#xB294; promise&#xB97C; &#xBC30;&#xC6E0;&#xB294;&#xB370;&#xC694;,</p>
+<p>async-await&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xBA74; &#xBCF4;&#xB2E4; &#xAC00;&#xB3C5;&#xC131;&#xC774; &#xB192;&#xC740; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>async-await&#xB294; promise&#xC640; &#xBCC4;&#xAC1C;&#xC758; &#xAC83;&#xC774; &#xC544;&#xB2C8;&#xB77C; promise&#xAE30;&#xBC18; &#xC704;&#xC5D0;&#xC11C; &#xC791;&#xB3D9;&#xD558;&#xB294; &#xAC83;&#xC774;&#xB77C;&#xACE0; &#xB9D0;&#xC500;&#xB4DC;&#xB838;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>async-await&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">asyncFunc</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">await</span> &#xCCAB;&#xBC88;&#xC9F8; promise
+    <span class="hljs-keyword">await</span> &#xB450;&#xBC88;&#xC9F8; promise
+    <span class="hljs-keyword">await</span> &#xC138;&#xBC88;&#xC9F8; promise
+    <span class="hljs-keyword">await</span> &#xB124;&#xBC88;&#xC9F8; promise
+    ...
+}
+</code></pre>
+<p>await &#xD0A4;&#xC6CC;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; async &#xD0A4;&#xC6CC;&#xB4DC;&#xAC00; function &#xC55E;&#xC5D0; &#xBD99;&#xC5B4;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB610;&#xD55C; await&#xB4A4;&#xC5D0;&#xB294; &#xD56D;&#xC0C1; promise &#xC778;&#xC2A4;&#xD134;&#xC2A4;&#xAC00; &#xC640;&#xC57C;&#xD574;&#xC694;.</p>
+<p>&#xADF8;&#xB807;&#xAC8C;&#xD558;&#xBA74; &#xD574;&#xB2F9; promise&#xAC00; resolve&#xAC12;&#xC744; &#xBC18;&#xD658;&#xD558;&#xAE30; &#xC804;&#xAE4C;&#xC9C0;&#xB294; await&#xAC00; &#xADF8;&#xB2E4;&#xC74C; &#xC9C4;&#xD589;&#xC744; &#xB9C9;&#xC544;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC2DC; &#xD55C;&#xBC88; &#xBCFC;&#xAE4C;&#xC694;?</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#xBE44;&#xB3D9;&#xAE30;&#xC791;&#xC5C5;</span>
+
+setTimeout(() =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-number">1</span>)
+}, <span class="hljs-number">1000</span>)
+<span class="hljs-built_in">console</span>.log(<span class="hljs-number">2</span>)
+
+<span class="hljs-comment">// &#xACB0;&#xACFC;&#xAC12;: 2 1</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// promise&#xB97C; &#xC774;&#xC6A9;&#xD574;&#xC11C; &#xBE44;&#xB3D9;&#xAE30;&#xB97C; &#xB3D9;&#xAE30;&#xC801;&#xC73C;&#xB85C; &#xBC14;&#xAFB8;&#xBA74;?</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">promiseFunc</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve) =&gt; {
+        setTimeout(() =&gt; {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-number">1</span>);
+            resolve();
+        }, <span class="hljs-number">1000</span>)
+    })
+}
+
+promiseFunc().then(() =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-number">2</span>);
+})
+
+<span class="hljs-comment">// &#xACB0;&#xACFC;&#xAC12;: 1 2</span>
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// async-await&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xBA74;?</span>
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">asyncFunc</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">await</span> promiseFunc();
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-number">2</span>);
+}
+
+<span class="hljs-comment">// &#xACB0;&#xACFC;&#xAC12;: 1 2</span>
+</code></pre>
+<p>&#xC5B4;&#xB5A4;&#xAC00;&#xC694;? &#xAC00;&#xB3C5;&#xC131;&#xC774; &#xC544;&#xC8FC; &#xC88B;&#xC8E0;?</p>
+<p>async-await&#xB97C; &#xC4F8;&#xB54C;&#xB294; try~catch&#xB85C; &#xAC10;&#xC2F8;&#xBA74; try&#xC5D0;&#xC11C; &#xBE44;&#xB3D9;&#xAE30;&#xC791;&#xC5C5;&#xC744; &#xD558;&#xB2E4; &#xC5D0;&#xB7EC;&#xAC00; &#xB0A0;&#xACBD;&#xC6B0; catch&#xB85C; &#xC7A1;&#xC544;&#xC904; &#xC218;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">asyncFunction</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-comment">// &#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xC791;&#xC5C5;, &#xC18C;&#xCF13;&#xC694;&#xCCAD; &#xB4F1; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xBE44;&#xB3D9;&#xAE30;&#xC791;&#xC5C5;&#xC744; &#xD558;&#xB2E4;&#xAC00; &#xC5D0;&#xB7EC;&#xAC00; &#xB0A0;&#xACBD;&#xC6B0; catch&#xC758; e&#xB85C; &#xC5D0;&#xB7EC;&#xC778;&#xC790;&#xAC00; &#xB118;&#xC5B4;&#xAC10;</span>
+    } <span class="hljs-keyword">catch</span>(e) {
+        <span class="hljs-built_in">console</span>.error(e)
+    }
+}
+</code></pre>
+<p>promise&#xB97C; &#xC791;&#xC131;&#xD588;&#xC73C;&#xBA74; &#xADF8;&#xAC78; async-await&#xB85C; &#xBC14;&#xAFB8;&#xB294; &#xC5F0;&#xC2B5;&#xC744; &#xD574;&#xBCF4;&#xC138;&#xC694;!</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#xC9C0;&#xB09C; &#xC2DC;&#xAC04; jsonplaceholder&#xC5D0; promise&#xB85C; &#xC694;&#xCCAD;&#xD55C; &#xAC83;&#xC744; async-await&#xB85C; &#xBC14;&#xAFB8;&#xBA74;?</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        data: <span class="hljs-literal">null</span>
+    };
+
+    handleClick = <span class="hljs-keyword">async</span> () =&gt; {
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> axios.get(
+            <span class="hljs-string">&apos;https://jsonplaceholder.typicode.com/posts&apos;</span>
+        );
+
+        <span class="hljs-keyword">this</span>.setState({
+            data: response.data
+        });
+    };
+
+    render() {
+        <span class="hljs-keyword">const</span> { data } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleClick}</span>&gt;</span>
+                    api&#xBD88;&#xB7EC;&#xC624;&#xAE30;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+                    {data &amp;&amp;
+                        data.map(item =&gt; {
+                            return <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>{item.title}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>;
+                        })}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        );
+    }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+</code></pre>
+<p>&#xC790; &#xC774;&#xC81C; &#xC0C8;&#xB85C;&#xC6B4; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB97C; &#xC9C4;&#xD589;&#xD574;&#xBCFC;&#xAE4C;&#xC694;?</p>
+<p>&#xD639;&#xC2DC;&#xB77C;&#xB3C4; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xAD6C;&#xC870;&#xD654;&#xC5D0; &#xB300;&#xD55C; &#xBCF5;&#xC2B5;&#xC744; &#xC81C;&#xB300;&#xB85C; &#xBABB;&#xD558;&#xC168;&#xB2E4;&#xBA74; &#xAF2D; &#xB4A4;&#xB85C; &#xB3CC;&#xC544;&#xAC00;&#xC11C; &#xBCF5;&#xC2B5;&#xC744; &#xD574;&#xC8FC;&#xC138;&#xC694;!</p>
+<pre><code class="lang-js"><span class="hljs-comment">// skeleton code&#xB97C; git clone&#xD574;&#xC8FC;&#xC138;&#xC694;</span>
+
+git clone https:<span class="hljs-comment">//github.com/react-nodejs-tutor/football-api-prac-demo.git</span>
+
+<span class="hljs-comment">// package.json&#xC5D0; &#xC788;&#xB294; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB4E4;&#xC744; &#xC124;&#xCE58;&#xD574;&#xC8FC;&#xC138;&#xC694;</span>
+
+yarn add
+
+yarn start
+</code></pre>
+<p>&#xC6B0;&#xC120; &#xC774;&#xBC88; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; apifootball &#xC0AC;&#xC774;&#xD2B8;&#xC5D0; &#xAC00;&#xC785;&#xD558;&#xACE0; apiKey&#xB97C; &#xBC1C;&#xAE09;&#xBC1B;&#xC73C;&#xC154;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xAC74; &#xC218;&#xC5C5;&#xC2DC;&#xAC04;&#xC5D0; &#xC9C4;&#xD589;&#xD588;&#xC8E0;?</p>
+<pre><code class="lang-js">https:<span class="hljs-comment">//apifootball.com&#xC5D0; &#xB4E4;&#xC5B4;&#xAC00;&#xC11C; register&#xD558;&#xACE0; apiKey &#xBC1C;&#xAE09;&#xBC1B;&#xAE30;</span>
+</code></pre>
+<p>clone&#xD55C; &#xD3F4;&#xB354; &#xAD6C;&#xC870;&#xB97C; &#xD55C;&#xBC88; &#xC0B4;&#xD3B4;&#xBCF4;&#xC138;&#xC694;.</p>
+<p>&#xC774;&#xC804;&#xC5D0; &#xC9C4;&#xD589;&#xD55C; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xBE44;&#xD574;&#xC11C; &#xB9CE;&#xC774; &#xBCF5;&#xC7A1;&#xD574;&#xBCF4;&#xC774;&#xC8E0;?</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD30C;&#xC77C;&#xC774; &#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xAC8C; &#xD3F4;&#xB354;&#xB97C; &#xC811;&#xACE0; &#xD3F4;&#xB354;&#xBA85;&#xB9CC; &#xC0B4;&#xD3B4;&#xBCF4;&#xC138;&#xC694;.</p>
+<p>&#xAD00;&#xB828;&#xC788;&#xB294; &#xD30C;&#xC77C;&#xB4E4;&#xB07C;&#xB9AC; &#xD3F4;&#xB354;&#xB85C; &#xAD6C;&#xC870;&#xD654;&#xD574;&#xB193;&#xC558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC774;&#xB807;&#xAC8C; &#xD558;&#xBA74; &#xB208;&#xC5D0; &#xC27D;&#xAC8C; &#xB4E4;&#xC5B4;&#xC624;&#xC2E4; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xBC88; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xAD6C;&#xC870;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="../assets/app.png" alt=""></p>
+<p>&#xC6B0;&#xC120; calendar&#xC640; league&#xB294; &#xC2E0;&#xACBD;&#xC4F0;&#xC9C0;&#xB9D0;&#xACE0; &#xC720;&#xC800;&#xAC00; url&#xC5D0; &#xCC98;&#xC74C; &#xC811;&#xC18D;&#xD588;&#xC744;&#xB54C; &#xC601;&#xAD6D; &#xD504;&#xB9AC;&#xBBF8;&#xC5B4;&#xB9AC;&#xADF8; 2020&#xB144; 1&#xC6D4; 1&#xC77C; ~ 2020&#xB144; 2&#xC6D4; 1&#xC77C; &#xACBD;&#xAE30;&#xBAA9;&#xB85D; &#xBC0F; &#xC2A4;&#xCF54;&#xC5B4;&#xB97C; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xC791;&#xC5C5;&#xC744; &#xD574;&#xBCFC;&#xAE4C;&#xC694;?</p>
+<p>api&#xC694;&#xCCAD;&#xD560;&#xB54C;&#xB294; &#xBC1C;&#xAE09;&#xBC1B;&#xC740; &#xAC1C;&#xC778; API KEY&#xB97C; &#xB123;&#xC5B4;&#xC8FC;&#xC138;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// MatchList.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MatchList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        data: <span class="hljs-literal">null</span>
+    };
+
+    getData = <span class="hljs-keyword">async</span> () =&gt; {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> axios.get(
+                <span class="hljs-string">&apos;https://apiv2.apifootball.com/?action=get_events&amp;from=2020-01-01&amp;to=2020-02-01&amp;league_id=148&amp;APIkey=&lt;&#xBCF8;&#xC778;API_KEY&gt;&apos;</span>
+            );
+
+            <span class="hljs-built_in">console</span>.log(response.data);
+            <span class="hljs-keyword">this</span>.setState({
+                data: response.data
+            });
+        } <span class="hljs-keyword">catch</span> (e) {
+            <span class="hljs-built_in">console</span>.error(e);
+        }
+    };
+
+    componentDidMount() {
+        <span class="hljs-keyword">this</span>.getData();
+    }
+
+    render() {
+        <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+    }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> MatchList;
+</code></pre>
+<p>&#xC5EC;&#xAE30;&#xAE4C;&#xC9C0; &#xD558;&#xACE0; console&#xC744; &#xD55C;&#xBC88; &#xBCF4;&#xC138;&#xC694;.</p>
+<p>cdm&#xC5D0;&#xC11C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC798;&#xAC00;&#xC838;&#xC624;&#xACE0; &#xC788;&#xB098;&#xC694;?</p>
+<p>&#xADF8;&#xB7EC;&#xBA74; &#xAC12;&#xC744; &#xD655;&#xC778;&#xD558;&#xACE0; &#xC5B4;&#xB5A4;&#xAC12;&#xC744; key&#xB85C; &#xC368;&#xC57C;&#xD560;&#xC9C0;&#xB3C4; &#xD30C;&#xC545;&#xD558;&#xC168;&#xACA0;&#xC8E0;?</p>
+<p>&#xC774;&#xBC88;&#xC5D4; &#xBD88;&#xB7EC;&#xC628; &#xB370;&#xC774;&#xD130;&#xB4E4;&#xC744; &#xBCF4;&#xC5EC;&#xC90D;&#xC2DC;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// MatchList.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MatchList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        data: <span class="hljs-literal">null</span>
+    };
+
+    getData = <span class="hljs-keyword">async</span> () =&gt; {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> axios.get(
+                <span class="hljs-string">&apos;https://apiv2.apifootball.com/?action=get_events&amp;from=2020-01-01&amp;to=2020-02-01&amp;league_id=148&amp;APIkey=&lt;&#xBCF8;&#xC778;API_KEY&gt;&apos;</span>
+            );
+
+            <span class="hljs-built_in">console</span>.log(response.data);
+            <span class="hljs-keyword">this</span>.setState({
+                data: response.data
+            });
+        } <span class="hljs-keyword">catch</span> (e) {
+            <span class="hljs-built_in">console</span>.error(e);
+        }
+    };
+
+    componentDidMount() {
+        <span class="hljs-keyword">this</span>.getData();
+    }
+
+    render() {
+        <span class="hljs-keyword">const</span> { data } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{data &amp;&amp; data.map(d =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">Match</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{d.match_id}</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{d}</span> /&gt;</span>)}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>;
+    }
+}
+
+export default MatchList;
+</span></code></pre>
+<p>&#xC778;&#xD130;&#xB137;&#xC774; &#xB290;&#xB9B0; &#xC0AC;&#xC6A9;&#xC790;&#xB294; &#xCC98;&#xC74C;&#xC5D0; &#xB4E4;&#xC5B4;&#xC654;&#xC744;&#xB54C; &#xC218; ms&#xB3D9;&#xC548; &#xC544;&#xBB34;&#xB0B4;&#xC6A9;&#xB3C4; &#xD45C;&#xC2DC;&#xB418;&#xC9C0; &#xC54A;&#xAE30;&#xB54C;&#xBB38;&#xC5D0; &#xD398;&#xC774;&#xC9C0;&#xB97C; &#xC774;&#xD0C8;&#xD560; &#xAC00;&#xB2A5;&#xC131;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xC624;&#xB958;&#xAC00; &#xB09C; &#xAC83;&#xC774; &#xC544;&#xB2C8;&#xB77C;&#xACE0; &#xB9D0;&#xD574;&#xC8FC;&#xAE30; &#xC704;&#xD574; &apos;&#xB370;&#xC774;&#xD130;&#xB97C; &#xBD88;&#xB7EC;&#xC624;&#xB294; &#xC911;&#xC774;&#xB2E4;&apos;&#xB77C;&#xB294; &#xBA54;&#xC138;&#xC9C0;&#xB97C; &#xB744;&#xC6CC;&#xC90D;&#xC2DC;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// MatchList.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MatchList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        loading: <span class="hljs-literal">false</span>
+        data: <span class="hljs-literal">null</span>
+    };
+
+    getData = <span class="hljs-keyword">async</span> () =&gt; {
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-keyword">this</span>.setState({
+                loading: <span class="hljs-literal">true</span>
+            })
+
+            <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> axios.get(
+                <span class="hljs-string">&apos;https://apiv2.apifootball.com/?action=get_events&amp;from=2020-01-01&amp;to=2020-02-01&amp;league_id=148&amp;APIkey=&lt;&#xBCF8;&#xC778;API_KEY&gt;&apos;</span>
+            );
+
+            <span class="hljs-built_in">console</span>.log(response.data);
+            <span class="hljs-keyword">this</span>.setState({
+                data: response.data
+            });
+        } <span class="hljs-keyword">catch</span> (e) {
+            <span class="hljs-built_in">console</span>.error(e);
+        }
+
+        <span class="hljs-keyword">this</span>.setState({
+            loading: <span class="hljs-literal">false</span>
+        })
+    };
+
+    componentDidMount() {
+        <span class="hljs-keyword">this</span>.getData();
+    }
+
+    render() {
+        <span class="hljs-keyword">const</span> { loading, data } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                {loading &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">textAlign:</span> &apos;<span class="hljs-attr">center</span>&apos; }}&gt;</span>&#xB370;&#xC774;&#xD130;&#xB97C; &#xBD88;&#xB7EC;&#xC624;&#xB294;&#xC911;&#xC785;&#xB2C8;&#xB2E4;...<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>}
+                {!loading &amp;&amp; data &amp;&amp; data.map(d =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">Match</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{d.match_id}</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{d}</span> /&gt;</span>)}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        );
+    }
+}
+
+export default MatchList;
+</span></code></pre>
+<p>&#xC774;&#xC81C; &#xC720;&#xC800;&#xAC00; &#xB0A0;&#xC9DC;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xBA74; &#xD574;&#xB2F9; &#xB0A0;&#xC9DC; &#xBC94;&#xC704;&#xC5D0; &#xC788;&#xB294; &#xACBD;&#xAE30; &#xB9AC;&#xC2A4;&#xD2B8; &#xBC0F; &#xC2A4;&#xCF54;&#xC5B4;&#xB97C; &#xBD88;&#xB7EC;&#xC624;&#xAC8C; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC81C;&#xAC00; &#xC791;&#xC131;&#xD55C; &#xC2A4;&#xCF08;&#xB808;&#xD1A4; &#xCF54;&#xB4DC;&#xC5D0;&#xC11C;&#xB294; &#xC774;&#xBBF8; calendar&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC00; &#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; state&#xB97C; &#xAD00;&#xB9AC;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB807;&#xB2E4;&#xBA74; &#xB0A0;&#xC9DC;&#xAC00; &#xBC14;&#xB00C;&#xBA74; &#xBC14;&#xB010;&#xB300;&#xB85C; &#xC0C8;&#xB85C;&#xC6B4; &#xC8FC;&#xC18C;&#xAC00; api call&#xC744; &#xB0A0;&#xB824;&#xC918;&#xC57C;&#xACA0;&#xC8E0;?</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xD504;&#xB85C;&#xC81D;&#xD2B8;1&#xC5D0;&#xC11C; &#xD588;&#xB358; &#xAC83;&#xCC98;&#xB7FC; &#xCD5C;&#xC0C1;&#xB2E8; app&#xC5D0;&#xC11C; &#xD574;&#xB2F9; &#xB0A0;&#xC9DC;&#xB97C; &#xBCC4;&#xB3C4;&#xC758; state&#xB85C; &#xBC1B;&#xC544;&#xC11C; &#xB2E4;&#xC2DC; MatchList&#xB85C; &#xB0B4;&#xB824;&#xC8FC;&#xB3C4;&#xB85D; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// App.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> MatchTemplate <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./MatchTemplate/MatchTemplate&apos;</span>;
+<span class="hljs-keyword">import</span> MatchFinder <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./MatchFinder&apos;</span>;
+<span class="hljs-keyword">import</span> Match <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Match&apos;</span>;
+<span class="hljs-keyword">import</span> dateFormatter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils/dateFormatter&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        range: {
+            startDate: <span class="hljs-string">&apos;2020-01-01&apos;</span>,
+            endDate: <span class="hljs-string">&apos;2020-02-01&apos;</span>
+        }
+    };
+
+    handleRange = range =&gt; {
+        <span class="hljs-keyword">const</span> startDate = dateFormatter(range[<span class="hljs-number">0</span>]);
+        <span class="hljs-keyword">const</span> endDate = dateFormatter(range[<span class="hljs-number">1</span>]);
+
+        <span class="hljs-keyword">this</span>.setState({
+            range: {
+                startDate,
+                endDate
+            }
+        });
+    };
+
+    render() {
+        <span class="hljs-keyword">return</span> (
+            &lt;div&gt;
+                &lt;MatchTemplate header={&lt;MatchFinder setRange={this.handleRange}/&gt;}&gt;
+                    &lt;Match /&gt;
+                &lt;/MatchTemplate&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+
+export default App;
+</code></pre>
+<p>&#xC5EC;&#xAE30;&#xC11C; dateFormatter&#xB294; &#xC65C; &#xC0AC;&#xC6A9;&#xD588;&#xC744;&#xAE4C;&#xC694;?</p>
+<p>calendar&#xC5D0;&#xC11C; &#xAD00;&#xB9AC;&#xB418;&#xACE0; &#xC788;&#xB294; state&#xB97C; &#xBCF4;&#xBA74; &#xBC30;&#xC5F4;&#xB85C; &#xAD00;&#xB9AC;&#xB418;&#xACE0; &#xC788;&#xACE0; &#xB0A0;&#xC9DC;&#xB3C4; yyyy-mm-dd&#xD615;&#xC2DD;&#xC774; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; api&#xBB38;&#xC11C;&#xC5D0;&#xC11C; &#xC6D0;&#xD558;&#xB294; &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xD30C;&#xC2F1;&#xD574;&#xC918;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB370;&#xC774;&#xD130; &#xD30C;&#xC2F1;&#xC740; &#xC81C;&#xAC00; &#xBBF8;&#xB9AC; &#xC900;&#xBE44;&#xD55C; dateFormatter&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
+<p>MatchFinder&#xC5D0;&#xC11C;&#xB294; &#xB2E4;&#xC2DC; &#xCE98;&#xB9B0;&#xB354;&#xB85C; props&#xB97C; &#xB0B4;&#xB824;&#xC8FC;&#xC138;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Calendar <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Calendar&apos;</span>;
+<span class="hljs-keyword">import</span> League <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./League&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MatchFinder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">const</span> { setRange } = <span class="hljs-keyword">this</span>.props;
+
+        <span class="hljs-keyword">return</span> (
+            &lt;div&gt;
+                &lt;League /&gt;
+                &lt;Calendar setRange={setRange} /&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+
+export default MatchFinder;
+</code></pre>
+<p>&#xC774;&#xB807;&#xAC8C; &#xD588;&#xC73C;&#xBA74; Calendar.js&#xC5D0;&#xC11C;&#xB294; button&#xC5D0; onClick&#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xB4F1;&#xB85D;&#xD558;&#xACE0; handleSubmit &#xC774;&#xBCA4;&#xD2B8;&#xD578;&#xB4E4;&#xB7EC;&#xB97C; &#xC791;&#xC131;&#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// Calendar.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactCalendar <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-calendar&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./Calendar.scss&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Calendar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        date: <span class="hljs-literal">null</span>
+    };
+
+    handleChange = date =&gt; {
+        <span class="hljs-keyword">this</span>.setState({
+            date
+        });
+    };
+
+    handleSubmit = e =&gt; {
+        e.preventDefault();
+
+        <span class="hljs-keyword">this</span>.props.setRange(<span class="hljs-keyword">this</span>.state.date);
+    };
+
+    render() {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;calendar&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ReactCalendar</span>
+                    <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;react-calendar&quot;</span>
+                    <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.handleChange}</span>
+                    <span class="hljs-attr">selectRange</span>=<span class="hljs-string">{true}</span>
+                /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;calender-button&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleSubmit}</span>&gt;</span>
+                    &#xAC80;&#xC0C9;
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        );
+    }
+}
+
+export default Calendar;
+</span></code></pre>
+<p>&#xB9AC;&#xC561;&#xD2B8; &#xAC1C;&#xBC1C;&#xC790;&#xB3C4;&#xAD6C;&#xB97C; &#xC5F4;&#xACE0; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+<p>&#xB2EC;&#xB825;&#xC5D0;&#xC11C; &#xB0A0;&#xC9DC;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xACE0; &#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB974;&#xBA74; App&#xC5D0; &#xC62C;&#xBC14;&#xB978; state&#xAC12;&#xC774; &#xC798; &#xB2F4;&#xAE30;&#xB098;&#xC694;?</p>
+<p>&#xC774;&#xC81C; App&#xC5D0;&#xC11C; MatchList&#xC5D0; &#xBCC0;&#xD654;&#xB41C; range&#xAC12;&#xC744; &#xB0B4;&#xB824;&#xC904;&#xAC8C;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// App.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> MatchTemplate <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./MatchTemplate/MatchTemplate&apos;</span>;
+<span class="hljs-keyword">import</span> MatchFinder <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./MatchFinder&apos;</span>;
+<span class="hljs-keyword">import</span> Match <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Match&apos;</span>;
+<span class="hljs-keyword">import</span> dateFormatter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils/dateFormatter&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        range: {
+            startDate: <span class="hljs-string">&apos;2020-01-01&apos;</span>,
+            endDate: <span class="hljs-string">&apos;2020-02-01&apos;</span>
+        }
+    };
+
+    handleRange = range =&gt; {
+        <span class="hljs-keyword">const</span> startDate = dateFormatter(range[<span class="hljs-number">0</span>]);
+        <span class="hljs-keyword">const</span> endDate = dateFormatter(range[<span class="hljs-number">1</span>]);
+
+        <span class="hljs-keyword">this</span>.setState({
+            range: {
+                startDate,
+                endDate
+            }
+        });
+    };
+
+    render() {
+        <span class="hljs-keyword">const</span> {range} = <span class="hljs-keyword">this</span>.state;
+
+        <span class="hljs-keyword">return</span> (
+            &lt;div&gt;
+                &lt;MatchTemplate header={&lt;MatchFinder setRange={this.handleRange}/&gt;}&gt;
+                    &lt;Match range={range}/&gt;
+                &lt;/MatchTemplate&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+
+export default App;
+</code></pre>
+<p>&#xADF8;&#xB807;&#xAC8C;&#xD558;&#xBA74; MatchList&#xC5D0;&#xC11C;&#xB294; &#xBCC0;&#xD55C; range&#xAC12;&#xC5D0; &#xB530;&#xB978; api&#xC694;&#xCCAD;&#xC744; &#xB2E4;&#xC2DC; &#xD574;&#xC918;&#xC57C;&#xACA0;&#xC8E0;?</p>
+<p>&#xC544;&#xAE4C;&#xB294; cdm&#xC73C;&#xB85C; &#xAD00;&#xB9AC;&#xD588;&#xB2E4;&#xBA74; &#xC774;&#xBC88;&#xC5D0;&#xB294; cdu&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xBCFC;&#xAC8C;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// MatchList.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Match <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Match&apos;</span>;
+<span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MatchList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        loading: <span class="hljs-literal">false</span>,
+        data: <span class="hljs-literal">null</span>
+    };
+
+    getData = <span class="hljs-keyword">async</span> () =&gt; {
+        <span class="hljs-keyword">this</span>.setState({
+            loading: <span class="hljs-literal">true</span>
+        });
+
+        <span class="hljs-keyword">try</span> {
+            <span class="hljs-comment">// &#xB3D9;&#xC801;&#xC73C;&#xB85C; &#xCFFC;&#xB9AC;&#xC0DD;&#xC131;</span>
+            <span class="hljs-keyword">const</span> { startDate, endDate } = <span class="hljs-keyword">this</span>.props.range;
+            <span class="hljs-keyword">const</span> extraQuery = <span class="hljs-string">`&amp;from=<span class="hljs-subst">${startDate}</span>&amp;to=<span class="hljs-subst">${endDate}</span>`</span>;
+
+            <span class="hljs-comment">// &#xD15C;&#xD50C;&#xB9BF; &#xB9AC;&#xD130;&#xB7F4; &#xC0AC;&#xC6A9;</span>
+            <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> axios.get(
+                <span class="hljs-string">`https://apiv2.apifootball.com/?action=get_events<span class="hljs-subst">${extraQuery}</span>&amp;league_id=148&amp;APIkey=&lt;&#xBCF8;&#xC778;API_KEY&gt;`</span>
+            );
+
+            <span class="hljs-built_in">console</span>.log(response.data);
+            <span class="hljs-keyword">this</span>.setState({
+                data: response.data
+            });
+        } <span class="hljs-keyword">catch</span> (e) {
+            <span class="hljs-built_in">console</span>.error(e);
+        }
+
+        <span class="hljs-keyword">this</span>.setState({
+            loading: <span class="hljs-literal">false</span>
+        });
+    };
+
+    componentDidMount() {
+        <span class="hljs-keyword">this</span>.getData();
+    }
+
+    <span class="hljs-comment">// cdu&#xB4F1;&#xB85D;</span>
+    componentDidUpdate(prevProps, prevState) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.props.range !== prevProps.range) {
+            <span class="hljs-keyword">this</span>.getData();
+        }
+    }
+
+    render() {
+        <span class="hljs-keyword">const</span> { loading, data } = <span class="hljs-keyword">this</span>.state;
+        <span class="hljs-comment">// !data.error &#xC870;&#xAC74; &#xCD94;&#xAC00;</span>
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                {loading &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">textAlign:</span> &apos;<span class="hljs-attr">center</span>&apos; }}&gt;</span>&#xB370;&#xC774;&#xD130;&#xB97C; &#xBD88;&#xB7EC;&#xC624;&#xB294;&#xC911;&#xC785;&#xB2C8;&#xB2E4;...<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>}
+                {!loading &amp;&amp; data &amp;&amp; !data.error &amp;&amp;
+                    data.map(d =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">Match</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{d.match_id}</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{d}</span> /&gt;</span>)}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        );
+    }
+}
+
+export default MatchList;
+</span></code></pre>
+<p>&#xC5EC;&#xAE30;&#xAE4C;&#xC9C0;&#xD558;&#xACE0; &#xC774;&#xBC88;&#xC5D4; league&#xC885;&#xB958;&#xC5D0;&#xB530;&#xB77C;&#xC11C; api call&#xC744; &#xB2E4;&#xC2DC; &#xD558;&#xAC8C; &#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+<p>&#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C; &#xBB34;&#xC2A8; &#xC791;&#xC5C5;&#xC744; &#xD560; &#xC9C0;, state&#xB97C; &#xC5B4;&#xB514;&#xC11C; &#xAD00;&#xB9AC;&#xD558;&#xACE0; props&#xB97C; &#xC5B4;&#xB514;&#xC5D0;&#xC11C; &#xC5B4;&#xB514;&#xB85C; &#xB0B4;&#xB824;&#xC904;&#xC9C0; &#xC0DD;&#xAC01;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+<p>&#xCD08;&#xBC18;&#xC5D0; &#xC774;&#xB7F0; &#xC791;&#xC5C5;&#xC774; &#xC5B4;&#xB824;&#xC6B0;&#xC2DC;&#xB2E4;&#xBA74; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xAE30;&#xC804;&#xC5D0; &#xBA3C;&#xC800; &#xC885;&#xC774;&#xC5D0; &#xCF54;&#xB529;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+<p>&#xC6B0;&#xB9AC;&#xAC00; &#xD560; &#xC791;&#xC5C5;&#xC740; &#xB450;&#xAC00;&#xC9C0;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBC14;&#xB010; &#xB9AC;&#xADF8;&#xC885;&#xB958;&#xC5D0; &#xB530;&#xB77C; api call&#xC744; &#xB2E4;&#xC2DC;&#xD558;&#xAE30;, &#xADF8;&#xB9AC;&#xACE0; &#xD074;&#xB9AD;&#xD55C; &#xBA54;&#xB274;&#xC758; &#xC2A4;&#xD0C0;&#xC77C;&#xC744; &#xBC14;&#xAFD4;&#xC8FC;&#xB294; &#xAC83;. &#xC774; &#xB450;&#xAC00;&#xC9C0; &#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// App.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> MatchTemplate <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./MatchTemplate/MatchTemplate&apos;</span>;
+<span class="hljs-keyword">import</span> MatchFinder <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./MatchFinder&apos;</span>;
+<span class="hljs-keyword">import</span> Match <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Match&apos;</span>;
+<span class="hljs-keyword">import</span> dateFormatter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../utils/dateFormatter&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    state = {
+        <span class="hljs-comment">//&#xCD94;&#xAC00;</span>
+        leagueId: <span class="hljs-number">148</span>,
+        range: {
+            startDate: <span class="hljs-string">&apos;2020-01-01&apos;</span>,
+            endDate: <span class="hljs-string">&apos;2020-02-01&apos;</span>
+        }
+    };
+
+    handleRange = range =&gt; {
+        <span class="hljs-keyword">const</span> startDate = dateFormatter(range[<span class="hljs-number">0</span>]);
+        <span class="hljs-keyword">const</span> endDate = dateFormatter(range[<span class="hljs-number">1</span>]);
+
+        <span class="hljs-keyword">this</span>.setState({
+            range: {
+                startDate,
+                endDate
+            }
+        });
+    };
+
+    <span class="hljs-comment">// &#xCD94;&#xAC00;</span>
+    handleLeagueId = leagueId =&gt; {
+        <span class="hljs-keyword">this</span>.setState({
+            leagueId
+        });
+    };
+
+    render() {
+        <span class="hljs-keyword">const</span> { leagueId, range } = <span class="hljs-keyword">this</span>.state;
+
+        <span class="hljs-keyword">return</span> (
+            &lt;div&gt;
+                // leagueId&#xB294; &#xB458;&#xB2E4;&#xD55C;&#xD14C; &#xB0B4;&#xB824;&#xC90C;
+                &lt;MatchTemplate
+                    header={
+                        &lt;MatchFinder
+                            setRange={this.handleRange}
+                            setLeagueId={this.handleLeagueId}
+                            leagueId={leagueId}
+                        /&gt;
+                    }
+                &gt;
+                    &lt;Match range={range} leagueId={leagueId} /&gt;
+                &lt;/MatchTemplate&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+
+export default App;
+</code></pre>
+<p>&#xC774;&#xC81C; Matchfinder&#xC5D0;&#xC11C; &#xB9AC;&#xADF8;&#xB85C; props&#xB97C; &#xB0B4;&#xB824;&#xC8FC;&#xC138;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// MatchFinder.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Calendar <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./Calendar&apos;</span>;
+<span class="hljs-keyword">import</span> League <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./League&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MatchFinder</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">const</span> { setRange, setLeagueId, leagueId } = <span class="hljs-keyword">this</span>.props;
+
+        <span class="hljs-keyword">return</span> (
+            &lt;div&gt;
+                &lt;League setLeagueId={setLeagueId} leagueId={leagueId} /&gt;
+                &lt;Calendar setRange={setRange} /&gt;
+            &lt;/div&gt;
+        );
+    }
+}
+
+export default MatchFinder;
+</code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// LeagueList.js</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LeagueList</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">const</span> { setLeagueId, leagueId } = <span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                {
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;leagueList-wrapper&quot;</span>&gt;</span>
+                        {leagueTypes.map(league =&gt; {
+                            return (
+                                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{league.league_id}</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;leagueList&quot;</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">LeagueItem</span>
+                                        <span class="hljs-attr">league_name</span>=<span class="hljs-string">{league.league_name}</span>
+                                        <span class="hljs-attr">league_id</span>=<span class="hljs-string">{league.league_id}</span>
+                                        <span class="hljs-attr">setLeagueId</span>=<span class="hljs-string">{setLeagueId}</span>
+                                        <span class="hljs-attr">selected</span>=<span class="hljs-string">{leagueId</span> =<span class="hljs-string">==</span> <span class="hljs-attr">league.league_id</span> ? &apos;<span class="hljs-attr">true</span>&apos; <span class="hljs-attr">:</span> <span class="hljs-attr">false</span>}
+                                    /&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                            );
+                        })}
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        );
+    }
+}
+
+export default LeagueList;
+</span></code></pre>
+<pre><code class="lang-js"><span class="hljs-comment">// LeagueItem.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component, Fragment } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./LeagueItem.scss&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LeagueItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">const</span> { league_name, league_id, setLeagueId, selected } = <span class="hljs-keyword">this</span>.props;
+
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Fragment</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>
+                    <span class="hljs-attr">className</span>=<span class="hljs-string">{`league</span> ${<span class="hljs-attr">selected</span> &amp;&amp; &apos;<span class="hljs-attr">selected</span>&apos;}`}
+                    <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setLeagueId(league_id)}
+                &gt;
+                    {league_name}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">Fragment</span>&gt;</span></span>
+        );
+    }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> LeagueItem;
+</code></pre>
+<p>&#xC5EC;&#xAE30;&#xAE4C;&#xC9C0;&#xD558;&#xACE0; &#xAC1C;&#xBC1C;&#xC790;&#xB3C4;&#xAD6C;&#xB85C; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xC138;&#xC694;. &#xC0C8;&#xB85C;&#xC6B4; &#xB9AC;&#xADF8;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xBA74; leagueId&#xAC00; App&#xC5D0;&#xC11C; &#xC798; &#xB2F4;&#xAE30;&#xB098;&#xC694;?</p>
+<p>&#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xB85C; &#xBC14;&#xB010; &#xB9AC;&#xADF8;&#xC5D0; &#xB530;&#xB978; api&#xD638;&#xCD9C;&#xC744; &#xD574;&#xC8FC;&#xBA74; &#xB05D;&#xB098;&#xACA0;&#xC8E0;?</p>
+<pre><code class="lang-js"><span class="hljs-comment">// MatchList.js</span>
+
+...            
+            const { startDate, endDate } = <span class="hljs-keyword">this</span>.props.range;
+            <span class="hljs-keyword">const</span> { leagueId } = <span class="hljs-keyword">this</span>.props;
+            <span class="hljs-keyword">const</span> extraQuery = <span class="hljs-string">`&amp;from=<span class="hljs-subst">${startDate}</span>&amp;to=<span class="hljs-subst">${endDate}</span>&amp;league_id=<span class="hljs-subst">${leagueId}</span>`</span>
+...            
+
+    componentDidUpdate(prevProps, prevState) {
+        <span class="hljs-keyword">if</span> (
+            <span class="hljs-keyword">this</span>.props.range !== prevProps.range ||
+            <span class="hljs-keyword">this</span>.props.leagueId !== prevProps.leagueId
+        ) {
+            <span class="hljs-keyword">this</span>.getData();
+        }
+    }
+</code></pre>
+<p>&#xCD95;&#xD558;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;. &#xC774;&#xC81C;&#xB294; &#xC880; &#xBB34;&#xC5B8;&#xAC00;&#xB97C; &#xB9CC;&#xB4E0;&#xB2E4;&#xB294; &#xB290;&#xB08C;&#xC774; &#xB4DC;&#xC2DC;&#xB098;&#xC694;?</p>
+<p>skeleton&#xCF54;&#xB4DC;&#xB97C; &#xB744;&#xC6B0;&#xACE0; &#xBA87;&#xBC88;&#xC529; &#xBC18;&#xBCF5;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+<p>&#xBCF5;&#xC2B5;&#xD558;&#xC2E4;&#xB54C;&#xB294; &#xC808;&#xB300; &#xB208;&#xC73C;&#xB85C;&#xB9CC; &#xBCF4;&#xC2DC;&#xC9C0; &#xB9C8;&#xC2DC;&#xACE0;, &#xCF54;&#xB4DC;&#xB97C; &#xC5EC;&#xB7EC;&#xBC88; &#xBC18;&#xBCF5;&#xD574;&#xC11C; &#xC791;&#xC131;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../3ac15/axios.html" class="navigation navigation-prev " aria-label="Previous page: Axios를 이용한 api call">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="router.html" class="navigation navigation-next " aria-label="Next page: router">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"async-await + 프로젝트2","level":"5.1","depth":1,"next":{"title":"router","level":"5.2","depth":1,"path":"4ac15/router.md","ref":"4ac15/router.md","articles":[]},"previous":{"title":"Axios를 이용한 api call","level":"4.6","depth":1,"path":"3ac15/axios.md","ref":"3ac15/axios.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4ac15/async-await-+-d504-b85c-c81d-d2b8-2.md","mtime":"2020-04-12T10:11:15.524Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-12T10:11:42.659Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
