@@ -1,0 +1,493 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>setState (updater function) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="immer.html" />
+    
+    
+    <link rel="prev" href="../2ac15/todolist.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">개발환경세팅</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    READEME
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1강</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                <a href="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                    
+                    JSX 기초문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../1ac15/propsc640-state.html">
+            
+                <a href="../1ac15/propsc640-state.html">
+            
+                    
+                    Props와 State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                <a href="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                    
+                    LifeCycle에 대한 이해
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../1ac15/javascript-array-methods.html">
+            
+                <a href="../1ac15/javascript-array-methods.html">
+            
+                    
+                    Javascript Array Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../1ac15/wrap-ups1.html">
+            
+                <a href="../1ac15/wrap-ups1.html">
+            
+                    
+                    Wrap-ups(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2강</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../2ac15/wrap-ups2.html">
+            
+                <a href="../2ac15/wrap-ups2.html">
+            
+                    
+                    Wrap-ups(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../2ac15/todolist.html">
+            
+                <a href="../2ac15/todolist.html">
+            
+                    
+                    컴포넌트 구조화 시작
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3강</li>
+        
+        
+    
+        <li class="chapter active" data-level="4.1" data-path="setstate.html">
+            
+                <a href="setstate.html">
+            
+                    
+                    setState (updater function)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="immer.html">
+            
+                <a href="immer.html">
+            
+                    
+                    Immer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="styling1-sass.html">
+            
+                <a href="styling1-sass.html">
+            
+                    
+                    styling(1) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="styling2-sass.html">
+            
+                <a href="styling2-sass.html">
+            
+                    
+                    styling(2) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="promise.html">
+            
+                <a href="promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="axios.html">
+            
+                <a href="axios.html">
+            
+                    
+                    Axios를 이용한 api call
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >setState (updater function)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#xC6B0;&#xB9AC;&#xB294; &#xC774;&#xBC88;&#xC2DC;&#xAC04;&#xC5D0; &#xBD88;&#xBCC0;&#xC131;&#xAD00;&#xB9AC;&#xB97C; &#xC27D;&#xAC8C; &#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xB3C4;&#xC640;&#xC8FC;&#xB294; immer&#xB77C;&#xB294; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xBC30;&#xC6CC;&#xBCFC; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; immer&#xB97C; &#xBC30;&#xC6B0;&#xAE30; &#xC804;&#xC5D0;&#xB294; setState&#xC5D0; &#xB300;&#xD574; &#xC870;&#xAE08; &#xB354; &#xC54C;&#xC544;&#xBD10;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC218;&#xC5C5;&#xC2DC;&#xAC04;&#xC5D0; &#xBCF4;&#xC5EC;&#xB4DC;&#xB9B0; &#xAC83;&#xACFC; &#xAC19;&#xC774; setState&#xB294; &#xB450;&#xAC00;&#xC9C0; &#xBC29;&#xC2DD;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xB420; &#xC218; &#xC788;&#xB2E4;&#xACE0; &#xB9D0;&#xC500;&#xB4DC;&#xB838;&#xC8E0;?</p>
+<p>&#xCCAB;&#xBC88;&#xC9F8;&#xB294; &#xC6B0;&#xB9AC;&#xAC00; &#xC9C0;&#xAE08;&#xAE4C;&#xC9C0; &#xD574;&#xC624;&#xB358; &#xAC1D;&#xCCB4;&#xB97C; &#xC9D1;&#xC5B4;&#xB123;&#xB294; &#xBC29;&#xC2DD;(state change)&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">this</span>.setState({
+    counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+})
+</code></pre>
+<p>&#xB450;&#xBC88;&#xC9F8;&#xB294; setState&#xC548;&#xC5D0; &#xD568;&#xC218;&#xB97C; &#xC9D1;&#xC5B4;&#xB123;&#xB294; &#xBC29;&#xC2DD;(updater function)&#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">this</span>.setState((state) =&gt; {
+    <span class="hljs-keyword">return</span> {
+        number: <span class="hljs-keyword">this</span>.state.number + <span class="hljs-number">1</span>
+    }
+})
+</code></pre>
+<p>&#xCCAB;&#xBC88;&#xC9F8;&#xC640; &#xB450;&#xBC88;&#xC9F8; &#xBC29;&#xC2DD;&#xC5D0;&#xB294; &#xAC04;&#xB2E8;&#xD55C; &#xCC28;&#xC774;&#xAC00; &#xC874;&#xC7AC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCCAB;&#xBC88;&#xC9F8; &#xBC29;&#xC2DD;&#xC740; this.setState&#xB97C; &#xC544;&#xBB34;&#xB9AC; &#xB9CE;&#xC774;&#xD574;&#xB3C4; &#xD55C;&#xBC88;&#xC5D0; &#xBB36;&#xC5EC;&#xC11C; &#xC791;&#xB3D9;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xACF5;&#xC2DD;&#xBB38;&#xC11C;&#xC5D0;&#xC11C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xB9D0;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&quot;This form of<code>setState()</code>is also asynchronous, and multiple calls during the same cycle may be <strong>batched</strong> together.</p>
+<p>Subsequent calls will override values from previous calls in the same cycle, so the quantity will only be incremented once.&quot;</p>
+<p>&#xC989; number&#xC744; 1&#xC529; &#xC99D;&#xAC00;&#xC2DC;&#xD0A4;&#xB294; setState&#xB97C; &#xC5F4;&#xBC88; &#xD558;&#xB354;&#xB77C;&#xB3C4; batch&#xD615;&#xD0DC;&#xB85C; &#xC791;&#xB3D9;&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; number&#xAC12;&#xC740; 1&#xB9CC; &#xC99D;&#xAC00;&#xB41C;&#xB2E4;&#xB294; &#xAC83;&#xC774;&#xC9C0;&#xC694;.</p>
+<pre><code class="lang-js">handleClick = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    })
+
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    })
+}
+
+&lt;button onClick={<span class="hljs-keyword">this</span>.handleClick}&gt;
+
+<span class="hljs-comment">// &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; 1&#xC99D;&#xAC00;</span>
+</code></pre>
+<p>&#xB9CC;&#xC57D;&#xC5D0; object&#xB97C; &#xC9D1;&#xC5B4;&#xB123;&#xC5B4;&#xC11C; state change&#xB97C; &#xD558;&#xACE0;&#xC2F6;&#xC740;&#xB370; batch&#xD615;&#xD0DC;&#xAC00; &#xC544;&#xB2C8;&#xB77C; &#xB3D9;&#xAE30;&#xC801;&#xC778; &#xD750;&#xB984;&#xC73C;&#xB85C; &#xC791;&#xC5C5;&#xD558;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C;&#xD560;&#xAE4C;&#xC694;?</p>
+<p>&#xADF8;&#xB7F4;&#xB54C;&#xB294; setState&#xC758; &#xB450;&#xBC88;&#xC9F8; &#xC778;&#xC790;&#xB85C; &#xCF5C;&#xBC31;&#xC744; &#xC4F0;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js">handleClick = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState({
+        counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+    }, () =&gt; {
+        <span class="hljs-keyword">this</span>.setState({
+            counter: <span class="hljs-keyword">this</span>.state.counter + <span class="hljs-number">1</span>
+        })
+    })
+}
+
+&lt;button onClick={<span class="hljs-keyword">this</span>.handleClick}&gt;
+
+<span class="hljs-comment">// &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; 2&#xC99D;&#xAC00;</span>
+</code></pre>
+<p>&#xADF8;&#xB7F0;&#xB370; &#xCF5C;&#xBC31;&#xC774; &#xB4E4;&#xC5B4;&#xAC00;&#xBA74; &#xBAA8;&#xC591;&#xC0C8;&#xAC00; &#xC880; &#xC9C0;&#xC800;&#xBD84;&#xD558;&#xC8E0;? </p>
+<p>&#xC704; &#xCF54;&#xB4DC;&#xB97C; setState&#xC548;&#xC5D0; updater function&#xC744; &#xC9D1;&#xC5B4;&#xB123;&#xC740; &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xBC14;&#xAFB8;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;</p>
+<pre><code class="lang-js">handleClick = () =&gt; {
+    <span class="hljs-keyword">this</span>.setState((state) =&gt; {
+        <span class="hljs-keyword">return</span> {
+            number: <span class="hljs-keyword">this</span>.state.number + <span class="hljs-number">1</span>
+        }
+    })
+
+    <span class="hljs-keyword">this</span>.setState((state) =&gt; {
+        <span class="hljs-keyword">return</span> {
+            number: <span class="hljs-keyword">this</span>.state.number + <span class="hljs-number">1</span>
+        }
+    })
+}
+
+&lt;button onClick={<span class="hljs-keyword">this</span>.handleClick}&gt;
+
+<span class="hljs-comment">// &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74; 2&#xC99D;&#xAC00;</span>
+</code></pre>
+<p>&#xC704; &#xCF54;&#xB4DC;&#xB97C; &#xC798; &#xAE30;&#xC5B5;&#xD558;&#xC2E0;&#xB2E4;&#xBA74; immer&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC2E4;&#xB54C;&#xC5D0; &#xD070; &#xBB34;&#xB9AC;&#xAC00; &#xC5C6;&#xC744; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../2ac15/todolist.html" class="navigation navigation-prev " aria-label="Previous page: 컴포넌트 구조화 시작">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="immer.html" class="navigation navigation-next " aria-label="Next page: Immer">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"setState (updater function)","level":"4.1","depth":1,"next":{"title":"Immer","level":"4.2","depth":1,"path":"3ac15/immer.md","ref":"3ac15/immer.md","articles":[]},"previous":{"title":"컴포넌트 구조화 시작","level":"3.2","depth":1,"path":"2ac15/todolist.md","ref":"2ac15/todolist.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3ac15/setstate.md","mtime":"2020-04-05T14:18:19.228Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-05T14:43:26.469Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
