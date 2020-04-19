@@ -1,0 +1,722 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>redux concept, basic · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="redux-ae30-cd08-2.html" />
+    
+    
+    <link rel="prev" href="../4ac15/router.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">개발환경세팅</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    READEME
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1강</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                <a href="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                    
+                    JSX 기초문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../1ac15/propsc640-state.html">
+            
+                <a href="../1ac15/propsc640-state.html">
+            
+                    
+                    Props와 State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                <a href="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                    
+                    LifeCycle에 대한 이해
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../1ac15/javascript-array-methods.html">
+            
+                <a href="../1ac15/javascript-array-methods.html">
+            
+                    
+                    Javascript Array Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../1ac15/wrap-ups1.html">
+            
+                <a href="../1ac15/wrap-ups1.html">
+            
+                    
+                    Wrap-ups(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2강</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../2ac15/wrap-ups2.html">
+            
+                <a href="../2ac15/wrap-ups2.html">
+            
+                    
+                    Wrap-ups(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../2ac15/todolist.html">
+            
+                <a href="../2ac15/todolist.html">
+            
+                    
+                    컴포넌트 구조화 시작
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3강</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../3ac15/setstate.html">
+            
+                <a href="../3ac15/setstate.html">
+            
+                    
+                    setState (updater function)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../3ac15/immer.html">
+            
+                <a href="../3ac15/immer.html">
+            
+                    
+                    Immer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../3ac15/styling1-sass.html">
+            
+                <a href="../3ac15/styling1-sass.html">
+            
+                    
+                    styling(1) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../3ac15/styling2-sass.html">
+            
+                <a href="../3ac15/styling2-sass.html">
+            
+                    
+                    styling(2) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../3ac15/promise.html">
+            
+                <a href="../3ac15/promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../3ac15/axios.html">
+            
+                <a href="../3ac15/axios.html">
+            
+                    
+                    Axios를 이용한 api call
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4강</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../4ac15/async-await-+-d504-b85c-c81d-d2b8-2.html">
+            
+                <a href="../4ac15/async-await-+-d504-b85c-c81d-d2b8-2.html">
+            
+                    
+                    async-await + 프로젝트2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../4ac15/router.html">
+            
+                <a href="../4ac15/router.html">
+            
+                    
+                    router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5강</li>
+        
+        
+    
+        <li class="chapter active" data-level="6.1" data-path="redux.html">
+            
+                <a href="redux.html">
+            
+                    
+                    redux concept, basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="redux-ae30-cd08-2.html">
+            
+                <a href="redux-ae30-cd08-2.html">
+            
+                    
+                    redux basics 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="redux-actions-bindactioncreators.html">
+            
+                <a href="redux-actions-bindactioncreators.html">
+            
+                    
+                    redux actions, bindActionCreators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >redux concept, basic</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#xADF8;&#xB3D9;&#xC548; &#xB450;&#xCC28;&#xB840; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xAD6C;&#xC870;&#xD654;&#xB97C; &#xACBD;&#xD5D8;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xC218;&#xAC00; &#xB9CE;&#xC9C0;&#xB3C4; &#xC54A;&#xC74C;&#xC5D0;&#xB3C4; &#xBD88;&#xAD6C;&#xD558;&#xACE0; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC04;&#xC5D0; &#xBD80;&#xBAA8;&#xB97C; &#xAC70;&#xCCD0;&#xC11C; props&#xB97C; &#xC804;&#xB2EC;&#xD574;&#xC8FC;&#xB294; &#xAC83;&#xC774; &#xB9C8;&#xB0E5; &#xC27D;&#xC9C0;&#xB9CC;&#xC740; &#xC54A;&#xC558;&#xC8E0;?</p>
+<p>&#xB9CC;&#xC57D; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC00; &#xC5C4;&#xCCAD;&#xB098;&#xAC8C; &#xB9CE;&#xC544;&#xC9C4;&#xB2E4;&#xBA74; &#xC5B4;&#xB5A4; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0; &#xC5B4;&#xB5A4; state&#xAC00; &#xC788;&#xC5B4;&#xC57C;&#xD558;&#xACE0; &#xC11C;&#xB85C; &#xC5B4;&#xB5A4;&#xBC29;&#xC2DD;&#xC73C;&#xB85C; props&#xB97C; &#xB0B4;&#xB824;&#xC918;&#xC57C; &#xD560;&#xC9C0;&#xAC00; &#xB354; &#xC5B4;&#xB824;&#xC6CC;&#xC9C8; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9CC;&#xC57D; &#xC678;&#xBD80;&#xC5D0; &#xAE00;&#xB85C;&#xBC8C;&#xD55C; state &#xC800;&#xC7A5;&#xC18C;&#xAC00; &#xC788;&#xACE0; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB294; &#xD2B9;&#xC815; state&#xAC00; &#xD544;&#xC694;&#xD560;&#xB54C;&#xB9CC; &#xADF8; &#xC800;&#xC7A5;&#xC18C;&#xC5D0;&#xC11C; &#xD574;&#xB2F9; &#xAC12;&#xC744; &#xAEBC;&#xB0B4;&#xC4F4;&#xB2E4;&#xBA74; &#xC5BC;&#xB9C8;&#xB098; &#xD3B8;&#xD560;&#xAE4C;&#xC694;?</p>
+<p>&#xADF8;&#xAC78; &#xAD6C;&#xD604;&#xD55C; &#xAC83;&#xC774; &#xBC14;&#xB85C; redux&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9AC;&#xC561;&#xD2B8;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; redux&#xC5D0;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xAC1C;&#xB150;&#xB4E4;&#xC774; &#xC788;&#xC5B4;&#xC694;.</p>
+<ol>
+<li>&#xC2A4;&#xD1A0;&#xC5B4;</li>
+<li>&#xC561;&#xC158;, &#xC561;&#xC158;&#xC0DD;&#xC131;&#xD568;&#xC218;</li>
+<li>&#xB514;&#xC2A4;&#xD328;&#xCE58;</li>
+<li>&#xB9AC;&#xB4C0;&#xC11C;</li>
+</ol>
+<p>&#xC2A4;&#xD1A0;&#xC5B4;&#xB294; &#xB9D0;&#xADF8;&#xB300;&#xB85C; state&#xB97C; &#xAD00;&#xB9AC;&#xD558;&#xB294; &#xC800;&#xC7A5;&#xC18C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD2B9;&#xC815; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB294; &#xD2B9;&#xC815; state&#xAC00; &#xD544;&#xC694;&#xD560;&#xB54C; store&#xC5D0;&#xC11C; &#xAEBC;&#xB0B4;&#xC640;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30;&#xB9CC; &#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2A4;&#xD1A0;&#xC5B4;&#xC548;&#xC5D0;&#xB294; &#xC0C1;&#xD0DC;&#xAC12;&#xACFC; &#xB9AC;&#xB4C0;&#xC11C;&#xAC00; &#xB4E4;&#xC5B4;&#xC788;&#xB294;&#xB370;&#xC694;, &#xADF8;&#xB807;&#xB2E4;&#xBA74; &#xB9AC;&#xB4C0;&#xC11C;&#xB294; &#xBB34;&#xC5C7;&#xC77C;&#xAE4C;&#xC694;?</p>
+<p>&#xB9AC;&#xB4C0;&#xC11C;&#xB294; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC00; &#xBCF4;&#xB0B4;&#xB294; &#xC561;&#xC158;&#xC744; &#xBC1B;&#xC544;&#xC11C; &#xADF8;&#xC5D0; &#xC54C;&#xB9DE;&#xB294; &#xC0C1;&#xD0DC;&#xBCC0;&#xD654;&#xB97C; &#xAC00;&#xC838;&#xB2E4; &#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCC38;&#xACE0;&#xB85C; &#xC561;&#xC158;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC0DD;&#xACBC;&#xC5B4;&#xC694;.</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> CLICK = <span class="hljs-string">&quot;CLICK&quot;</span>
+</code></pre>
+<p>&#xB9AC;&#xB4C0;&#xC11C;&#xB294; &#xD56D;&#xC0C1; type&#xAC12;&#xC744; &#xBCF4;&#xAE30;&#xB54C;&#xBB38;&#xC5D0; &#xBCF4;&#xD1B5; &#xC561;&#xC158; &#xC0DD;&#xC131;&#xD568;&#xC218;&#xB77C;&#xB294; &#xAC83;&#xC744; &#xB9CC;&#xB4E4;&#xC5B4;&#xC11C; &#xC0AC;&#xC6A9;&#xD568;&#xC73C;&#xB85C;&#xC368; &#xB9E4;&#xBC88; type&#xC5D0; action&#xC744; &#xB9CC;&#xB4DC;&#xB294; &#xAC83;&#xC744; &#xB300;&#xC2E0;&#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC561;&#xC158;&#xC0DD;&#xC131;&#xD568;&#xC218;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xC0DD;&#xACBC;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> click = () =&gt; ({type: CLICK})
+</code></pre>
+<p>&#xB530;&#xB77C;&#xC11C; click&#xC774;&#xB77C;&#xB294; &#xD568;&#xC218;&#xB97C; &#xC2E4;&#xD589;&#xD558;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xACB0;&#xACFC;&#xAC00; &#xBC18;&#xD658;&#xB418;&#xB294; &#xAC83;&#xC774;&#xC8E0;</p>
+<pre><code class="lang-jsx"><span class="hljs-comment">// &#xD074;&#xB9AD;&#xC744; &#xD638;&#xCD9C;&#xD558;&#xBA74;</span>
+click()
+
+<span class="hljs-comment">// &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xBC18;&#xD658;&#xB429;&#xB2C8;&#xB2E4;</span>
+{type: <span class="hljs-string">&quot;CLICK&quot;</span>}
+</code></pre>
+<p>&#xC2A4;&#xD1A0;&#xC5B4;&#xC548;&#xC758; &#xB9AC;&#xB4C0;&#xC11C;&#xB294; &#xC561;&#xC158;&#xC744; &#xBC1B;&#xC544;&#xC11C; &#xD0C0;&#xC785;&#xC744; &#xD655;&#xC778;&#xD558;&#xACE0; &#xD574;&#xB2F9; &#xD0C0;&#xC785;&#xC5D0; &#xD574;&#xB2F9;&#xB418;&#xB294; &#xB85C;&#xC9C1;&#xC5D0; &#xB530;&#xB77C; &#xC2A4;&#xD1A0;&#xC5B4;&#xC758; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xBCC0;&#xD654; &#xC2DC;&#xCF1C;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB807;&#xB2E4;&#xBA74; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB294; &#xD2B9;&#xC815;&#xC561;&#xC158;&#xC744; &#xC5B4;&#xB5BB;&#xAC8C; &#xC2A4;&#xD1A0;&#xC5B4;&#xC5D0; &#xBCF4;&#xB0BC;&#xAE4C;&#xC694;? &#xADF8;&#xAC74; &#xB514;&#xC2A4;&#xD328;&#xCE58;&#xB77C;&#xB294; &#xD568;&#xC218;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-jsx">store.dispatch(click())
+</code></pre>
+<p>&#xC774;&#xB807;&#xAC8C;&#xD558;&#xBA74; &#xC2A4;&#xD1A0;&#xC5B4;&#xC548;&#xC5D0; &#xC788;&#xB294; &#xB9AC;&#xB4C0;&#xC11C;&#xB294;<code>{type: &quot;CLICK&quot;}</code>&#xC774;&#xB77C;&#xB294; &#xAC12;&#xC744; &#xBC1B;&#xAC8C;&#xB418;&#xB294; &#xAC83;&#xC774;&#xC8E0;.</p>
+<p>&#xC544;&#xB9C8; &#xB9AC;&#xB355;&#xC2A4;&#xAC00; &#xCC98;&#xC74C;&#xC774;&#xC2DC;&#xB77C; &#xC0C8;&#xB85C; &#xC3DF;&#xC544;&#xC9C0;&#xB294; &#xC6A9;&#xC5B4;&#xB4E4; &#xB54C;&#xBB38;&#xC5D0; &#xC5EC;&#xB7EC;&#xBAA8;&#xB85C; &#xD5F7;&#xAC08;&#xB9AC;&#xC2E4;&#xD150;&#xB370;&#xC694;, &#xC544;&#xB798; &#xADF8;&#xB9BC;&#xC744; &#xBCF4;&#xBA74;&#xC11C; &#xB2E4;&#xC2DC; &#xC774;&#xD574;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+<p><img src="../assets/redux-process.png" alt=""></p>
+<blockquote>
+<p><strong>&quot;</strong><em>&#xB9AC;&#xB355;&#xC2A4; &#xC2A4;&#xD1A0;&#xC5B4;&#xC5D0;&#xB294; state&#xC640; reducer&#xAC00; &#xB4E4;&#xC5B4;&#xAC00;&#xACE0; state&#xB97C; &#xBC14;&#xAFB8;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; reducer&#xB97C; &#xC791;&#xB3D9;&#xC2DC;&#xCF1C;&#xC57C; &#xD588;&#xC9C0;&quot;</em></p>
+<p><em>&quot;reducer&#xC548;&#xC5D0;&#xB294; state&#xB97C; &#xC5B4;&#xB5A4;&#xC2DD;&#xC73C;&#xB85C; &#xBCC0;&#xD654;&#xC2DC;&#xD0AC;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xB85C;&#xC9C1;&#xC774; &#xB4E4;&#xC5B4;&#xC788;&#xB294;&#xB370;, &#xADF8;&#xB7EC;&#xBA74; reducer&#xC548;&#xC758; &#xD2B9;&#xC815; &#xB85C;&#xC9C1;&#xC744; &#xC5B4;&#xB5BB;&#xAC8C; &#xC791;&#xB3D9;&#xC2DC;&#xCF30;&#xC9C0;?&quot;</em></p>
+<p><em>&quot;&#xC544; &#xB9DE;&#xB2E4; action&#xC744; dispatch&#xD574;&#xC8FC;&#xBA74; reducer&#xAC00; &#xD574;&#xB2F9; action&#xC758; type&#xC744; &#xCC3E;&#xC544;&#xC11C; &#xADF8;&#xC5D0; &#xC54C;&#xB9DE;&#xAC8C; state&#xB97C; &#xBCC0;&#xD654;&#xC2DC;&#xCF1C; &#xC8FC;&#xC5C8;&#xC9C0;&quot;</em></p>
+<p>...</p>
+<p>&#xB4F1;&#xB4F1; &#xCC98;&#xB7FC; &#xC704; &#xADF8;&#xB9BC; &#xAC01;&#xAC01;&#xC758; &#xAD6C;&#xC131;&#xC694;&#xC18C;&#xAC00; &#xBB34;&#xC5C7;&#xC778;&#xC9C0; &#xBA3C;&#xC800; &#xC774;&#xD574;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+</blockquote>
+<p>&#xC790;, &#xC774;&#xC81C; &#xAC1C;&#xB150;&#xC744; &#xC7A1;&#xC73C;&#xC168;&#xB2E4;&#xBA74; &#xC81C;&#xAC00; &#xBBF8;&#xB9AC; &#xC900;&#xBE44;&#xD55C; &#xD15C;&#xD50C;&#xB9BF;&#xC744; clone&#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
+<pre><code class="lang-js">git clone https:<span class="hljs-comment">//github.com/react-nodejs-tutor/redux-template.git</span>
+</code></pre>
+<p>&#xB9AC;&#xB355;&#xC2A4;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB824;&#xBA74; &#xC6B0;&#xC120; &#xC2A4;&#xD1A0;&#xC5B4;&#xB97C; &#xD558;&#xB098; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C;&#xACA0;&#xC8E0;?</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xCC98;&#xC74C;&#xBD80;&#xD130; index.js&#xC5D0; store&#xB97C; &#xB9CC;&#xB4E4;&#xC9C0; &#xC54A;&#xACE0; &#xB9AC;&#xB4C0;&#xC11C;&#xD30C;&#xC77C;&#xBD80;&#xD130; &#xC791;&#xC131;&#xC744; &#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>store&#xB97C; &#xB9CC;&#xB4E4;&#xB54C;&#xC5D0;&#xB294; &#xB9AC;&#xB4C0;&#xC11C;&#xB97C; &#xD568;&#xAF10; &#xB123;&#xC5B4;&#xC918;&#xC57C; &#xC624;&#xB958;&#xAC00; &#xB098;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9AC;&#xB355;&#xC2A4; &#xACF5;&#xC2DD;&#xBB38;&#xC11C;&#xC5D0;&#xC11C;&#xB294; &#xC561;&#xC158;, &#xC561;&#xC158;&#xC0DD;&#xC131;&#xD568;&#xC218;&#xC640; &#xB9AC;&#xB4C0;&#xC11C;&#xB97C; &#xAC01;&#xAC01; &#xB2E4;&#xB978; &#xD30C;&#xC77C;&#xC5D0; &#xC791;&#xC131;&#xD558;&#xACE4; &#xD558;&#xB294;&#xB370;,</p>
+<p>&#xC6B0;&#xB9AC;&#xB294; ducks&#xD328;&#xD134;&#xC774;&#xB77C;&#xB294; &#xAC83;&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xAC83;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC561;&#xC158;, &#xC561;&#xC158;&#xC0DD;&#xC131;&#xD568;&#xC218;, &#xADF8;&#xB9AC;&#xACE0; &#xB9AC;&#xB4C0;&#xC11C;&#xB97C; &#xD55C; &#xD30C;&#xC77C;(&#xBAA8;&#xB4C8;)&#xC5D0; &#xBB36;&#xC5B4;&#xC11C; &#xC791;&#xC131;&#xC744; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>yarn start&#xB97C; &#xD1B5;&#xD574; &#xAC1C;&#xBC1C;&#xC11C;&#xBC84;&#xB97C; &#xC2E4;&#xD589;&#xC2DC;&#xD0A4;&#xBA74; &#xAC00;&#xC7A5; &#xC704;&#xC5D0; &#xBA3C;&#xC800; &#xBCF4;&#xC774;&#xB294; &#xCE74;&#xC6B4;&#xD130;&#xBD80;&#xD130; &#xC644;&#xC131;&#xC744; &#xD574;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/store/modules/counter.js</span>
+
+<span class="hljs-comment">// &#xC561;&#xC158;</span>
+<span class="hljs-comment">// &#xBAA8;&#xB4C8;&#xC774;&#xB984;&#xC744; &#xC55E;&#xC5D0; &#xBD99;&#xC5EC;&#xC90C;&#xC73C;&#xB85C;&#xC368; &#xC561;&#xC158;&#xBA85; &#xC911;&#xBCF5;&#xBC29;&#xC9C0;</span>
+<span class="hljs-keyword">const</span> INCREMENT = <span class="hljs-string">&apos;counter/INCREMENT&apos;</span>;
+<span class="hljs-keyword">const</span> DECREMENT = <span class="hljs-string">&apos;counter/DECREMENT&apos;</span>;
+
+<span class="hljs-comment">// &#xC561;&#xC158;&#xC0DD;&#xC131;&#xD568;&#xC218;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> increment = () =&gt; ({ type: INCREMENT });
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> decrement = () =&gt; ({ type: DECREMENT });
+
+<span class="hljs-comment">// &#xCD08;&#xAE30; &#xC0C1;&#xD0DC;&#xAC12;</span>
+<span class="hljs-keyword">const</span> initialState = {
+    number: <span class="hljs-number">0</span>
+};
+
+<span class="hljs-comment">// &#xB9AC;&#xB4C0;&#xC11C;</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">counter</span>(<span class="hljs-params">state = initialState, action</span>) </span>{
+    <span class="hljs-keyword">switch</span> (action.type) {
+        <span class="hljs-keyword">case</span> INCREMENT:
+            <span class="hljs-keyword">return</span> {
+                ...state,
+                number: state.number + <span class="hljs-number">1</span>
+            };
+
+        <span class="hljs-keyword">case</span> DECREMENT:
+            <span class="hljs-keyword">return</span> {
+                ...state,
+                number: state.number - <span class="hljs-number">1</span>
+            };
+
+        <span class="hljs-keyword">default</span>:
+            <span class="hljs-keyword">return</span> state;
+    }
+}
+</code></pre>
+<p>&#xB9AC;&#xB4C0;&#xC11C;&#xB97C; &#xC791;&#xC131;&#xD560;&#xB54C;&#xB294; ...state&#xB85C; &#xC9C1;&#xC811; &#xBD88;&#xBCC0;&#xC131;&#xC744; &#xC720;&#xC9C0;&#xD574;&#xC918;&#xC57C; &#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xC78A;&#xC9C0;&#xB9C8;&#xC138;&#xC694;!</p>
+<p>setState() &#xD568;&#xC218;&#xC5D0;&#xC11C;&#xB294; &#xBD88;&#xBCC0;&#xC131; &#xAD00;&#xB9AC;&#xB97C; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xD574;&#xC8FC;&#xC5C8;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC6B0;&#xB9AC;&#xAC00; &#xC9C1;&#xC811; ... spread&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC5C8;&#xC5B4;&#xC694;.</p>
+<p>&#xD558;&#xC9C0;&#xB9CC; &#xB9AC;&#xB4C0;&#xC11C;&#xC5D0;&#xC11C;&#xB294; &#xAF2D;! &#xD574;&#xC8FC;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB798;&#xC57C; &#xB9AC;&#xB355;&#xC2A4; &#xAC1C;&#xBC1C;&#xC790;&#xB3C4;&#xAD6C;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xB418;&#xB3CC;&#xC544;&#xAC00;&#xAE30; &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74;&#xC11C; &#xC0C1;&#xD0DC;&#xBCC0;&#xD654;&#xB97C; &#xBCFC; &#xC218;&#xAC00; &#xC788;&#xC5B4;&#xC694;.</p>
+<p>&#xC704;&#xC640; &#xAC19;&#xC774; counter&#xBAA8;&#xB4C8;&#xC744; &#xC791;&#xC131;&#xD588;&#xB2E4;&#xBA74; combineReducers&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xBB36;&#xC5B4;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC9C0;&#xAE08;&#xC740; &#xBAA8;&#xB4C8;&#xC774; &#xD55C;&#xAC1C;&#xC9C0;&#xB9CC; &#xB098;&#xC911;&#xC5D0;&#xB294; &#xC5EC;&#xB7EC;&#xAC1C;&#xAC00; &#xB420; &#xC218; &#xC788;&#xC73C;&#xB2C8;&#xAE4C;&#xC694;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; index.js&#xC5D0;&#xC11C; &#xC2A4;&#xD1A0;&#xC5B4;&#xB97C; &#xB9CC;&#xB4E4;&#xAE30;&#xC804;&#xC5D0;, &#xC5EC;&#xB7EC; &#xB9AC;&#xB4C0;&#xC11C;&#xB4E4;&#xC744; &#xD55C;&#xBC88;&#xC5D0; &#xD569;&#xCCD0;&#xC8FC;&#xB294; &#xC791;&#xC5C5;&#xC744; &#xD574;&#xC904;&#xAC8C;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/store/modules/index.js</span>
+
+<span class="hljs-keyword">import</span> { combineReducers } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> counter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./counter&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> combineReducers({
+    counter
+});
+</code></pre>
+<p>&#xC774;&#xB807;&#xAC8C; &#xC5EC;&#xB7EC; &#xBAA8;&#xB4C8;&#xC744; &#xD558;&#xB098;&#xB85C; &#xBB36;&#xC73C;&#xBA74; &#xC2A4;&#xD1A0;&#xC5B4;&#xC5D0; &#xD55C;&#xBC88;&#xC5D0; &#xC9D1;&#xC5B4;&#xB123;&#xC744; &#xC218; &#xC788;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2A4;&#xD1A0;&#xC5B4;&#xB97C; &#xB9CC;&#xB4E4;&#xACE0; &#xB9AC;&#xB4C0;&#xC11C;&#xB97C; &#xC9D1;&#xC5B4;&#xB123;&#xC5B4; &#xBCFC;&#xAE4C;&#xC694;?</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/index.js</span>
+
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./index.css&apos;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> serviceWorker <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./serviceWorker&apos;</span>;
+<span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> rootReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store/modules&apos;</span>;
+
+<span class="hljs-keyword">const</span> store = createStore(rootReducer);
+<span class="hljs-comment">//&#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xCF58;&#xC194;&#xC5D0; &#xCC0D;&#xC5B4;&#xBCFC; &#xC218;&#xB3C4; &#xC788;&#xC74C;</span>
+<span class="hljs-comment">//console.log(store.getState());</span>
+
+ReactDOM.render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>, document.getElementById(&apos;root&apos;));
+
+serviceWorker.unregister();
+</span></code></pre>
+<p>&#xC774;&#xB807;&#xAC8C; &#xD558;&#xBA74; &#xC2A4;&#xD1A0;&#xC5B4;&#xAC00; &#xB9CC;&#xB4E4;&#xC5B4;&#xC9D1;&#xB2C8;&#xB2E4;. &#xC5EC;&#xAE30;&#xC11C; store.getState()&#xB97C; &#xCF58;&#xC194;&#xC5D0; &#xCC0D;&#xC5B4;&#xBCF4;&#xBA74; &#xC2A4;&#xD1A0;&#xC5B4;&#xC548;&#xC758; &#xAC12;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218;&#xAC00; &#xC788;&#xC5B4;&#xC694;.</p>
+<p>&#xC5EC;&#xAE30;&#xAE4C;&#xC9C0;&#xB294; &#xC544;&#xC9C1; &#xC6B0;&#xB9AC; &#xB9AC;&#xC561;&#xD2B8; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xC2A4;&#xD1A0;&#xC5B4;&#xB97C; &#xC801;&#xC6A9;&#xD55C; &#xAC83;&#xC774; &#xC544;&#xB2D9;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB610;&#xD55C; &#xC6B0;&#xB9AC;&#xC5D0;&#xAC8C;&#xB294; &#xB9AC;&#xB355;&#xC2A4; &#xAC1C;&#xBC1C;&#xC790;&#xB3C4;&#xAD6C;&#xB77C;&#xB294; &#xAC83;&#xC774; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xB354; &#xC27D;&#xAC8C; &#xD655;&#xC778;&#xD560; &#xC218;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC6B0;&#xB9AC; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xB9AC;&#xB355;&#xC2A4;&#xB97C; &#xC801;&#xC6A9;&#xD574;&#xBCF4;&#xACE0; &#xAC1C;&#xBC1C;&#xC790;&#xB3C4;&#xAD6C;&#xAE4C;&#xC9C0; &#xB2EC;&#xC544;&#xBCFC;&#xAE4C;&#xC694;?</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/index.js</span>
+
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./index.css&apos;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> serviceWorker <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./serviceWorker&apos;</span>;
+<span class="hljs-keyword">import</span> { createStore } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> rootReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store/modules&apos;</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+
+<span class="hljs-keyword">const</span> devTools =
+    <span class="hljs-built_in">window</span>.__REDUX_DEVTOOLS_EXTENSION__ &amp;&amp; <span class="hljs-built_in">window</span>.__REDUX_DEVTOOLS_EXTENSION__();
+<span class="hljs-keyword">const</span> store = createStore(rootReducer, devTools);
+
+ReactDOM.render(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>=<span class="hljs-string">{store}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>,
+    document.getElementById(&apos;root&apos;)
+);
+
+serviceWorker.unregister();
+</span></code></pre>
+<p>&#xC774;&#xC81C;&#xB294; &#xC6B0;&#xB9AC; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xC5F0;&#xACB0;&#xB41C; &#xB9AC;&#xB355;&#xC2A4; &#xC2A4;&#xD1A0;&#xC5B4;&#xC5D0;&#xC11C; &#xAC12;&#xC744; &#xBE7C;&#xC640;&#xC11C; &#xC0AC;&#xC6A9;&#xD574;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC5EC;&#xAE30;&#xC11C;&#xB294; &#xD504;&#xB808;&#xC820;&#xD14C;&#xC774;&#xC154;&#xB110; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC640; &#xCEE8;&#xD14C;&#xC774;&#xB108; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB85C; &#xAD6C;&#xBD84;&#xD560; &#xAC83;&#xC778;&#xB370;&#xC694;,</p>
+<p>&#xCEE8;&#xD14C;&#xC774;&#xB108; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB294; &#xB9AC;&#xB355;&#xC2A4; &#xC2A4;&#xD1A0;&#xC5B4;&#xC640; &#xC18C;&#xD1B5;&#xD558;&#xB294; smart&#xD55C; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xACE0;,</p>
+<p>&#xD504;&#xB808;&#xC820;&#xD14C;&#xC774;&#xC154;&#xB110; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB294; &#xCEE8;&#xD14C;&#xC774;&#xB108; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC00; &#xB0B4;&#xB824;&#xC8FC;&#xB294; &#xAC12;&#xB9CC;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB294; dumb&#xD55C; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC6B0;&#xC120; &#xB9AC;&#xB355;&#xC2A4;&#xC548;&#xC758; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xAC00;&#xC838;&#xC62C; &#xC218; &#xC788;&#xB294; &#xCEE8;&#xD14C;&#xC774;&#xB108; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xBD80;&#xD130; &#xB9CC;&#xB4E4;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/containers/CounterContainer.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> Counter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../components/Counter&apos;</span>;
+<span class="hljs-keyword">import</span> { increment, decrement } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../store/modules/counter&apos;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CounterContainer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">const</span> { number, increment, decrement } = <span class="hljs-keyword">this</span>.props;
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Counter</span>
+                <span class="hljs-attr">number</span>=<span class="hljs-string">{number}</span>
+                <span class="hljs-attr">onIncrement</span>=<span class="hljs-string">{increment}</span>
+                <span class="hljs-attr">onDecrement</span>=<span class="hljs-string">{decrement}</span>
+            /&gt;</span>
+        );
+    }
+}
+
+const mapStateToProps = state =&gt; ({
+    number: state.counter.number
+});
+
+const mapDispatchToProps = dispatch =&gt; ({
+    increment: () =&gt; dispatch(increment()),
+    decrement: () =&gt; dispatch(decrement())
+});
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(CounterContainer);
+</span></code></pre>
+<p>&#xC5EC;&#xAE30;&#xC11C; &#xC911;&#xC694;&#xD55C;&#xAC74; connect&#xD568;&#xC218;&#xC785;&#xB2C8;&#xB2E4;. react-redux &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xAC00; &#xC81C;&#xACF5;&#xD574;&#xC8FC;&#xB294; connect&#xD568;&#xC218;&#xB294; &#xC2A4;&#xD1A0;&#xC5B4;&#xC640; &#xCEE8;&#xD14C;&#xC774;&#xB108; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xC5F0;&#xACB0;&#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2A4;&#xD1A0;&#xC5B4;&#xC548;&#xC5D0;&#xB294; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xAC12;&#xC774; &#xC788;&#xC744; &#xC218; &#xC788;&#xB294;&#xB370; &#xADF8;&#xC911;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xAC12;&#xC744; mapStateToProps&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xBC1B;&#xC544;&#xC62C; &#xC218; &#xC788;&#xACE0;,</p>
+<p>&#xC2A4;&#xD1A0;&#xC5B4;&#xC5D0; &#xC561;&#xC158;&#xC744; &#xB514;&#xC2A4;&#xD328;&#xCE58;&#xD574;&#xC11C; &#xC2A4;&#xD1A0;&#xC5B4;&#xAC00; &#xAD00;&#xB9AC;&#xD558;&#xB294; &#xC0C1;&#xD0DC;&#xAC12;&#xC744; &#xBCC0;&#xD654;&#xC2DC;&#xD0AC; &#xC218; &#xC788;&#xB294; &#xD568;&#xC218;&#xB97C; mapDispatchToProps&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xBC1B;&#xC544;&#xC62C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB9AC;&#xACE0; CounterContainer&#xB294; this.props&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xADF8; &#xAC12;&#xB4E4;&#xC744; &#xBC1B;&#xC544;&#xC624;&#xAC8C; &#xB418;&#xB294; &#xAC83;&#xC774;&#xC8E0;.</p>
+<p>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C; Counter.js&#xC5D0;&#xC11C;&#xB294; &#xCEE8;&#xD14C;&#xC774;&#xB108; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xAC00; &#xB0B4;&#xB824;&#xC900; &#xAC12;&#xB4E4;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xAE30;&#xB9CC; &#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/components/Counter.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./Counter.css&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Counter</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+    render() {
+        <span class="hljs-keyword">const</span> { number, onIncrement, onDecrement } = <span class="hljs-keyword">this</span>.props;
+
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;Counter&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{number}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;btn-wrapper&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{onIncrement}</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{onDecrement}</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        );
+    }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Counter;
+</code></pre>
+<p>&#xC790; &#xC774;&#xC81C; &#xAC1C;&#xBC1C;&#xC11C;&#xBC84;&#xB97C; &#xC5F4;&#xACE0; &#xCE74;&#xC6B4;&#xD130;&#xB97C; &#xC791;&#xB3D9; &#xC2DC;&#xCF1C;&#xBCF4;&#xC138;&#xC694;.</p>
+<p>App.js&#xC5D0;&#xC11C; &#xD504;&#xB808;&#xC820;&#xD14C;&#xC774;&#xC154;&#xB110; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xB80C;&#xB354;&#xD574;&#xC8FC;&#xACE0; &#xC788;&#xC73C;&#xB2C8; &#xC798; &#xC791;&#xB3D9;&#xD560; &#xC218;&#xAC00; &#xC5C6;&#xACA0;&#xC8E0;?</p>
+<p>&#xCEE8;&#xD14C;&#xC774;&#xB108; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xB97C; &#xB80C;&#xB354;&#xD574;&#xC8FC;&#xB294; &#xAC83;&#xC744; &#xC808;&#xB300; &#xC78A;&#xC9C0;&#xB9C8;&#xC138;&#xC694;!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../4ac15/router.html" class="navigation navigation-prev " aria-label="Previous page: router">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="redux-ae30-cd08-2.html" class="navigation navigation-next " aria-label="Next page: redux basics 2">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"redux concept, basic","level":"6.1","depth":1,"next":{"title":"redux basics 2","level":"6.2","depth":1,"path":"5ac15/redux-ae30-cd08-2.md","ref":"5ac15/redux-ae30-cd08-2.md","articles":[]},"previous":{"title":"router","level":"5.2","depth":1,"path":"4ac15/router.md","ref":"4ac15/router.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"5ac15/redux.md","mtime":"2020-04-19T12:13:30.823Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-19T12:14:02.917Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
