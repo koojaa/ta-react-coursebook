@@ -31,3 +31,9 @@
 * [async-await + 프로젝트2](4ac15/async-await-+-d504-b85c-c81d-d2b8-2.md)
 * [router](4ac15/router.md)
 
+## 5강
+
+* [redux concept, basic](5ac15/redux.md)
+* [redux basics 2](5ac15/redux-ae30-cd08-2.md)
+* [redux actions, bindActionCreators](5ac15/redux-actions-bindactioncreators.md)
+
