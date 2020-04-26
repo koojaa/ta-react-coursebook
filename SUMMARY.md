@@ -37,3 +37,8 @@
 * [redux basics 2](5ac15/redux-ae30-cd08-2.md)
 * [redux actions, bindActionCreators](5ac15/redux-actions-bindactioncreators.md)
 
+## 6강
+
+* [redux basics 3](6ac15/redux-basics-3.md)
+* [redux advanced \(thunk\)](6ac15/redux-advanced-thunk.md)
+
