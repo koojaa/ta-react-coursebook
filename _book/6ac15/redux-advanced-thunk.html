@@ -1,0 +1,667 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>redux advanced (thunk) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="redux-basics-3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">개발환경세팅</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    READEME
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">1강</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                <a href="../1ac15/jsxae30-cd08-bb38-bc95.html">
+            
+                    
+                    JSX 기초문법
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../1ac15/propsc640-state.html">
+            
+                <a href="../1ac15/propsc640-state.html">
+            
+                    
+                    Props와 State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                <a href="../1ac15/lifecyclec5d0-b300-d55c-c774-d574.html">
+            
+                    
+                    LifeCycle에 대한 이해
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../1ac15/javascript-array-methods.html">
+            
+                <a href="../1ac15/javascript-array-methods.html">
+            
+                    
+                    Javascript Array Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../1ac15/wrap-ups1.html">
+            
+                <a href="../1ac15/wrap-ups1.html">
+            
+                    
+                    Wrap-ups(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">2강</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../2ac15/wrap-ups2.html">
+            
+                <a href="../2ac15/wrap-ups2.html">
+            
+                    
+                    Wrap-ups(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../2ac15/todolist.html">
+            
+                <a href="../2ac15/todolist.html">
+            
+                    
+                    컴포넌트 구조화 시작
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">3강</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../3ac15/setstate.html">
+            
+                <a href="../3ac15/setstate.html">
+            
+                    
+                    setState (updater function)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../3ac15/immer.html">
+            
+                <a href="../3ac15/immer.html">
+            
+                    
+                    Immer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../3ac15/styling1-sass.html">
+            
+                <a href="../3ac15/styling1-sass.html">
+            
+                    
+                    styling(1) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../3ac15/styling2-sass.html">
+            
+                <a href="../3ac15/styling2-sass.html">
+            
+                    
+                    styling(2) - sass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../3ac15/promise.html">
+            
+                <a href="../3ac15/promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../3ac15/axios.html">
+            
+                <a href="../3ac15/axios.html">
+            
+                    
+                    Axios를 이용한 api call
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">4강</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../4ac15/async-await-+-d504-b85c-c81d-d2b8-2.html">
+            
+                <a href="../4ac15/async-await-+-d504-b85c-c81d-d2b8-2.html">
+            
+                    
+                    async-await + 프로젝트2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../4ac15/router.html">
+            
+                <a href="../4ac15/router.html">
+            
+                    
+                    router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">5강</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../5ac15/redux.html">
+            
+                <a href="../5ac15/redux.html">
+            
+                    
+                    redux concept, basic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../5ac15/redux-ae30-cd08-2.html">
+            
+                <a href="../5ac15/redux-ae30-cd08-2.html">
+            
+                    
+                    redux basics 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../5ac15/redux-actions-bindactioncreators.html">
+            
+                <a href="../5ac15/redux-actions-bindactioncreators.html">
+            
+                    
+                    redux actions, bindActionCreators
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">6강</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="redux-basics-3.html">
+            
+                <a href="redux-basics-3.html">
+            
+                    
+                    redux basics 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.2" data-path="redux-advanced-thunk.html">
+            
+                <a href="redux-advanced-thunk.html">
+            
+                    
+                    redux advanced (thunk)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >redux advanced (thunk)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#xB9AC;&#xB4C0;&#xC11C;&#xB294; &#xC21C;&#xC218;&#xD574;&#xC57C; &#xD55C;&#xB2E4;&#xACE0; &#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB530;&#xB77C;&#xC11C; &#xAC19;&#xC740; &#xC778;&#xD48B;&#xC5D0; &#xB530;&#xB77C; &#xB2E4;&#xB978; &#xC544;&#xC6C3;&#xD48B;&#xC774; &#xB098;&#xC62C; &#xAC00;&#xB2A5;&#xC131;&#xC774; &#xC788;&#xB294; &#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xC694;&#xCCAD;&#xACFC; &#xAC19;&#xC740; &#xC21C;&#xC218;&#xD558;&#xC9C0; &#xBABB;&#xD55C; &#xC791;&#xC5C5;&#xC740; &#xB9AC;&#xB355;&#xC2A4; &#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC720;&#xC800;&#xAC00; &#xC5B4;&#xB5A4; &#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0;&#xC11C; &#xD2B9;&#xC815; &#xC561;&#xC158;&#xC744; &#xB0A0;&#xB838;&#xC744; &#xB54C;(&#xC2A4;&#xD1A0;&#xC5B4;&#xC5D0; &#xB514;&#xC2A4;&#xD328;&#xCE58; &#xD588;&#xC744; &#xB54C;),</p>
+<p>&#xD574;&#xB2F9; &#xC561;&#xC158;&#xC774; &#xC21C;&#xC218;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xC791;&#xC5C5;&#xC744; &#xC694;&#xAD6C;&#xD558;&#xB294; &#xAC83;&#xC774;&#xB77C;&#xBA74;, &#xB9AC;&#xB355;&#xC2A4; &#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xAC00; &#xADF8; &#xC561;&#xC158;&#xC744; &#xB300;&#xC2E0; &#xCC98;&#xB9AC;&#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C; &#xADF8;&#xB9BC;&#xC744; &#xBCFC;&#xAE4C;&#xC694;?<img src="../assets/middlewares.png" alt="">&#xC704; &#xADF8;&#xB9BC;&#xCC98;&#xB7FC; &#xC5B4;&#xB5A4; &#xC561;&#xC158;&#xC774; &#xB0A0;&#xB77C;&#xC654;&#xB294;&#xB370;, &#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xAC00; &quot;&#xD574;&#xB2F9; &#xC561;&#xC158;&#xC774; &#xC21C;&#xC218;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xC791;&#xC5C5;&#xC744; &#xC694;&#xCCAD;&#xD558;&#xB294; &#xAC83; &#xAC19;&#xB2E4;&quot;&#xB77C;&#xACE0; &#xD310;&#xB2E8;&#xD558;&#xBA74;,</p>
+<p>&#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xAC00; &#xB9AC;&#xB4C0;&#xC11C; &#xB300;&#xC2E0; &#xADF8; &#xC791;&#xC5C5;&#xC744; &#xCC98;&#xB9AC;&#xD574;&#xC8FC;&#xACE0; next()&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xAC8C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB7EC;&#xBA74; &#xB9AC;&#xB4C0;&#xC11C;&#xB294; &#xC21C;&#xC218;&#xD55C; &#xC791;&#xC5C5;&#xB9CC; &#xD558;&#xAC8C; &#xB418;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB807;&#xB2E4;&#xBA74; &quot;&#xD574;&#xB2F9; &#xC561;&#xC158;&#xC774; &#xC21C;&#xC218;&#xD55C; &#xC791;&#xC5C5;&#xC744; &#xC694;&#xCCAD;&#xD558;&#xB294; &#xAC83;&#xC778;&#xC9C0;, &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC740;&#xC9C0;&quot; &#xD310;&#xB2E8;&#xD560; &#xAE30;&#xC900;&#xC774; &#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xC5D0;&#xAC8C; &#xD544;&#xC694;&#xD558;&#xACA0;&#xC8E0;?</p>
+<p>&#xC774;&#xAC74; &#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xB9C8;&#xB2E4; &#xD310;&#xB2E8;&#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC774; &#xB2E4;&#xB985;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9AC;&#xB355;&#xC2A4; &#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xB294; &#xC885;&#xB958;&#xAC00; &#xC0C1;&#xB2F9;&#xD788; &#xB9CE;&#xC740;&#xB370;&#xC694;,</p>
+<p>&#xC6B0;&#xB9AC;&#xB294; &#xADF8; &#xC911;&#xC5D0;&#xC11C;, &#xD604;&#xC7AC;&#xAE4C;&#xC9C0;&#xB294; &#xAC00;&#xC7A5; &#xBCF4;&#xD3B8;&#xC801;&#xC73C;&#xB85C; &#xC4F0;&#xC774;&#xB294; <strong>redux-thunk</strong>&#xB97C; &#xD559;&#xC2B5;&#xD574;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>redux thunk&#xB294; &#xC561;&#xC158;&#xC0DD;&#xC131;&#xD568;&#xC218;&#xAC00; &#xBC18;&#xD658;&#xD558;&#xB294; &#xC561;&#xC158;&#xC774; &#xD568;&#xC218;&#xC77C; &#xACBD;&#xC6B0; &#xC774;&#xB97C; &#xC790;&#xC2E0;&#xC774; &#xB300;&#xC2E0; &#xCC98;&#xB9AC;&#xD574;&#xC918;&#xC57C; &#xD558;&#xB294; &#xC561;&#xC158;&#xC73C;&#xB85C; &#xD310;&#xB2E8;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xB294; redux thunk &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC; &#xCF54;&#xB4DC;&#xB97C; &#xC0B4;&#xD3B4;&#xBCF4;&#xC2DC;&#xBA74; &#xC27D;&#xAC8C; &#xD655;&#xC778;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<pre><code>git clone https://github.com/react-nodejs-tutor/rx-middleware.git
+
+yarn 
+
+(yarn add redux-thunk)
+</code></pre><p>&#xC6B0;&#xC120; &#xC2E4;&#xC2B5;&#xC744; &#xC704;&#xD574; &#xC704; &#xAE43; &#xC8FC;&#xC18C;&#xB97C; &#xD074;&#xB860;&#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
+<p>&#xC5EC;&#xAE30;&#xC11C;&#xB294; &#xAC04;&#xB2E8;&#xD558;&#xAC8C; &#xBC84;&#xD2BC;&#xC744; &#xB204;&#xB974;&#xBA74; 1&#xCD08;&#xB4A4;&#xC5D0; insert&#xAC00; &#xB418;&#xB294; &#xBE44;&#xB3D9;&#xAE30; insert&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4; &#xBCF4;&#xBA74;&#xC11C; thunk&#xC5D0; &#xC775;&#xC219;&#xD574;&#xC838; &#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBA3C;&#xC800; thunk middleware&#xB97C; &#xC2A4;&#xD1A0;&#xC5B4;&#xC5D0; &#xC801;&#xC6A9;&#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
+<p>&#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xB97C; &#xC801;&#xC6A9;&#xD560; &#xB54C;&#xB294; applyMiddleware&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/index.js</span>
+
+<span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> ReactDOM <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-dom&apos;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./index.css&apos;</span>;
+<span class="hljs-keyword">import</span> App <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./App&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> serviceWorker <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./serviceWorker&apos;</span>;
+<span class="hljs-keyword">import</span> { createStore, applyMiddleware } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+<span class="hljs-keyword">import</span> rootReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store/modules&apos;</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> middleware <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./middleware&apos;</span>;
+<span class="hljs-keyword">import</span> ReduxThunk <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-thunk&apos;</span>;
+
+<span class="hljs-keyword">const</span> store = createStore(rootReducer, applyMiddleware(middleware, ReduxThunk));
+
+ReactDOM.render(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>=<span class="hljs-string">{store}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">App</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span>,
+    document.getElementById(&apos;root&apos;)
+);
+
+serviceWorker.unregister();
+</span></code></pre>
+<p>&#xC774;&#xBC88;&#xC5D0;&#xB294; &#xBAA8;&#xB4C8;&#xC5D0;  insertAsync thunk&#xD568;&#xC218;&#xB97C; &#xCD94;&#xAC00;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4;&#xC8FC;&#xC138;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/store/modules/form.js</span>
+
+<span class="hljs-keyword">import</span> { createAction, handleActions } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux-actions&apos;</span>;
+
+<span class="hljs-keyword">const</span> CHANGE_INPUT = <span class="hljs-string">&apos;form/CHANGE_INPUT&apos;</span>;
+<span class="hljs-keyword">const</span> INSERT = <span class="hljs-string">&apos;form/INSERT&apos;</span>;
+
+<span class="hljs-keyword">let</span> id = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> changeInput = createAction(CHANGE_INPUT, text =&gt; text);
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> insert = createAction(INSERT, text =&gt; ({ text, id: id++ }));
+
+<span class="hljs-comment">// &#xC6D0;&#xD558;&#xB294; &#xBE44;&#xB3D9;&#xAE30; &#xC791;&#xC5C5;&#xC744; thunk &#xD568;&#xC218;&#xC548;&#xC5D0;&#xC11C; &#xC2E4;&#xD589; (&#xC5EC;&#xAE30;&#xC11C;&#xB294; setTimeout&#xC774; &#xD574;&#xB2F9;)</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> insertAsync = input =&gt; dispatch =&gt; {
+    setTimeout(() =&gt; {
+        dispatch(insert(input));
+    }, <span class="hljs-number">1000</span>);
+};
+
+<span class="hljs-keyword">const</span> initialState = {
+    input: <span class="hljs-string">&apos;&apos;</span>,
+    list: []
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> handleActions(
+    {
+        [CHANGE_INPUT]: (state, action) =&gt; ({
+            ...state,
+            input: action.payload
+        }),
+        [INSERT]: (state, action) =&gt; ({
+            ...state,
+            list: state.list.concat({
+                id: action.payload.id,
+                text: action.payload.text
+            })
+        })
+    },
+    initialState
+);
+</code></pre>
+<p>&#xADF8;&#xB9AC;&#xACE0; App&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8;&#xC5D0;&#xC11C; &#xAE30;&#xC874; &#xCF54;&#xB4DC;&#xB97C; bindActionsCreators&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xAE30;&#xC874;&#xCF54;&#xB4DC;&#xB97C; &#xBC14;&#xAFB8;&#xACE0; insertAsync&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xBCF4;&#xC138;&#xC694;.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// src/App.js</span>
+
+<span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+<span class="hljs-keyword">import</span> { connect } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react-redux&apos;</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> formActions <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store/modules/form&apos;</span>;
+<span class="hljs-keyword">import</span> { bindActionCreators } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;redux&apos;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+
+    handleChange = e =&gt; {
+        <span class="hljs-keyword">const</span> { value } = e.target;
+        <span class="hljs-keyword">this</span>.props.FormActions.changeInput(value);
+    };
+
+    handleSubmit = e =&gt; {
+        e.preventDefault();
+
+        <span class="hljs-keyword">const</span> { FormActions, input } = <span class="hljs-keyword">this</span>.props;
+
+        FormActions.insertAsync(input);
+        FormActions.changeInput(<span class="hljs-string">&apos;&apos;</span>);
+    };
+
+    render() {
+        <span class="hljs-keyword">const</span> { input, list } = <span class="hljs-keyword">this</span>.props;
+
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{input}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{this.handleChange}</span> /&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{this.handleSubmit}</span>&gt;</span>&#xC785;&#xB825;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+                {list.map(item =&gt; {
+                    return <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>{item.text}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>;
+                })}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        );
+    }
+}
+
+export default connect(
+    ({ form: { input, list } }) =&gt; ({
+        input,
+        list
+    }),
+    dispatch =&gt; ({
+        FormActions: bindActionCreators(formActions, dispatch)
+    })
+)(App);
+</span></code></pre>
+<p>1&#xCD08;&#xB4A4;&#xC5D0; &#xC785;&#xB825;&#xAC12;&#xC774; &#xC798; &#xCD94;&#xAC00;&#xB418;&#xB098;&#xC694;?</p>
+<p>&#xC774;&#xC5B4;&#xC11C; &#xB9AC;&#xB355;&#xC2A4; &#xBBF8;&#xB4E4;&#xC6E8;&#xC5B4;&#xB97C; &#xC0AC;&#xC6A9;&#xD574; axios call&#xC744; &#xD574;&#xBCF4;&#xACE0; &#xB85C;&#xADF8;&#xC778;, &#xB85C;&#xADF8;&#xC544;&#xC6C3;&#xC744; &#xAD6C;&#xD604;&#xD574; &#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="redux-basics-3.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: redux basics 3">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"redux advanced (thunk)","level":"7.2","depth":1,"previous":{"title":"redux basics 3","level":"7.1","depth":1,"path":"6ac15/redux-basics-3.md","ref":"6ac15/redux-basics-3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6ac15/redux-advanced-thunk.md","mtime":"2020-04-26T14:51:26.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-26T14:51:39.952Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
