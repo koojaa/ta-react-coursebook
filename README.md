@@ -1,5 +1,4 @@
-_**본 문서는 탈잉에서 진행하는 &lt;실무자에게 배우는 리액트의 모든 것&gt; 수강생분들을 위한 리액트 코스북입니다. **_
+_** **_[http://www.learning-react.com ](http://www.taling-react-course.com에서)_**에서 문서 내용을 확인하실 수 있습니다. **_
 
-_** http://www.taling-react-course.com에서 문서 내용을 확인하실 수 있습니다. **_
+**\* 자료 내용에 문의사항이 있으실 경우 sualyer010@snu.ac.kr으로 메일 보내주세요.**
 
-**\* 문의사항이 있으실 경우 sualyer010@snu.ac.kr으로 메일 보내주세요.**
